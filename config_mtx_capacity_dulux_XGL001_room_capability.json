@@ -1,0 +1,8 @@
+{
+  "tableName": "mtx_capacity_xgl001_room_capability",
+  "sheetName": "BKLN06 & XGL001 power_Capacity",
+  "region": "A3:B4",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

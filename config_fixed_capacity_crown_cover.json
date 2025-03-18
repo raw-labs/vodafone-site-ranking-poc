@@ -1,0 +1,8 @@
+{
+  "tableName": "fixed_capacity_cover",
+  "sheetName": "Cover",
+  "region": "A7:BA253",
+  "headerRows": 1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

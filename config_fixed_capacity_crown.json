@@ -1,0 +1,8 @@
+{
+  "tableName": "fixed_capacity",
+  "sheetName": "All",
+  "region": "A6:BA267",
+  "headerRows": 2,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

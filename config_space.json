@@ -1,0 +1,11 @@
+{
+  "tableName": "space",
+  "sheetName": "Suite Line Capacity",
+  "region": "A3:D10",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll",
+  "directory": "/opt/projects/Raw/projects/vodafone-pov-3/poc-data-sources/structured_data/space/",
+  "filenamePattern": "^([^\\s]*)\\s.*xlsx$",
+  "filenameColumnName": "site_code"
+}

@@ -1,0 +1,8 @@
+{
+  "tableName": "bridge",
+  "sheetName": "Sheet1",
+  "region": "A1:G914",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

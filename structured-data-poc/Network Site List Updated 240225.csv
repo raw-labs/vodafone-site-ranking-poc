@@ -1,0 +1,921 @@
+﻿"Site Code","Site Name","Site Type","Site Category","Region","Status","Address","GIS Migrated","Floorplans","Location","Comments","Restricted","Freehold/Leasehold","Power Resilience"
+"XBE (BSGMTX)","Basingstoke","LTC","[""NFV"",""Gi-LAN"",""CHE""]","THAMES VALLEY","Normal","Unit 2, Gemini
+Hamilton Close
+Basingstoke
+RG21 6YT","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Basingstoke_Floorplan.pdf?csf=1&e=S9jFZ4","https://www.google.co.uk/maps?q=51.275716,-1.108654&num=1&t=h&sll=51.274046,-1.107006&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.274827,-1.108085&spn=0.00996,0.019248&z=16","Data migrated to GIS
+
+01256330837
+","True","Leasehold","N+N (Resilient)"
+"BKLN06","Bracknell - Sterling Centre Unit 6","LTC","[""NFV""]","Thames Valley","Normal","STERLING CENTRE
+BRACKNELL
+BERKSHIRE
+RG12 2PW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BKLN06.pdf","https://www.google.com/maps/place/51%C2%B024%2746.3%22N+0%C2%B044%2716.5%22W/@51.412862,-0.7385274,323m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4128611!4d-0.7379167","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"XEH (LIVMTX)","Edinburgh","LTC","[""NFV"",""Gi-LAN"",""CHE""]","SCOTLAND","Normal","1 Haldane Square
+Brucefield Industrial Estate 
+Livingston
+Midlothian, EH54 9BY","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Edinburgh_Floorplan.pdf?csf=1&e=4jAow6","http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=EH54+9DS&sll=51.134689,-0.157843&sspn=0.019981,0.038495&ie=UTF8&hq=&hnear=Livingston,+West+Lothian+EH54+9DS,+United+Kingdom&ll=55.865776,-3.53013&spn=0.017868,0.038495&t=h&z=15","Data migrated to GIS","True","Freehold","N+N (Resilient)"
+"XGR (GCRMTX)","Gloucester","LTC","[""NFV""]","SOUTH WEST","Normal","Green Farm
+Falcon Close
+Quedgeley
+Gloucester, GL2 4LY","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Gloucester_Floorplan.pdf?csf=1&e=pHzzYF","http://maps.google.co.uk/maps?q=51.833315,-2.277673&num=1&t=h&sll=51.833599,-2.277284&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.832144,-2.275651&spn=0.00492,0.009624&z=17","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XGL (BMGMTX)","Gravelly Hill","LTC","[""RA"",""NFV"",""Gi-LAN"",""CHE""]","MIDLANDS","Normal","Unit 14, Junction 6 Industrial Park
+66 Electric Avenue
+Birmingham
+B6 7JJ","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Gravelly_Hill_Floorplans/GravellyHill_First_Floorplan.pdf?csf=1&web=1&e=cEYeBz","http://maps.google.co.uk/maps?q=52.511732,-1.868529&num=1&t=h&sll=52.511703,-1.86899&sspn=0.002422,0.004812&hl=en&ie=UTF8&ll=52.510488,-1.864693&spn=0.00969,0.019248&z=16","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XGL001 (BMGMTX)","Gravelly Hill","LTC","[""NFV""]","MIDLANDS","Normal","Unit 14, Junction 6
+Industrial Park
+66 Electric Avenue
+Birmingham
+B67JJ","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Gravelly_Hill_Floorplans/GravellyHill_Ground_Floorplan.pdf?csf=1&web=1&e=NUDtvI","/sites/InfrastructureDeliveryPublic/Lists/test/DispForm.aspx?ID=12&e=DdEUbZ","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XLD (LLDMTX)","Leyland","LTC","[""NFV"",""Gi-LAN"",""CHE""]","NORTH WEST","Normal","Leyland MTX
+Carr Lane, Off Wheelton Lane
+Farington
+Leyland 
+PR25 3RD ","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Leyland_Floorplan.pdf?csf=1&e=3z2TXZ","http://maps.google.co.uk/maps?q=53.704316,-2.690213&num=1&t=h&sll=53.702829,-2.689694&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=53.705357,-2.693152&spn=0.009425,0.019248&z=16","Data migrated to GIS","True","Freehold","N+N (Resilient)"
+"XMS (MKSMTX)","Milton Keynes","LTC","[""NFV"",""Gi-LAN"",""CHE""]","NORTHERN HOME COUNTIES","Normal","Site F, Fingle Drive
+Buckinghamshire
+Milton Keynes
+MK13 0ER","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Milton_Keynes_Floorplan.pdf?csf=1&e=mRiHQC","http://maps.google.co.uk/maps?q=52.060552,-0.799022&num=1&t=h&sll=52.062057,-0.799132&sspn=0.009789,0.019248&hl=en&ie=UTF8&ll=52.054575,-0.801272&spn=0.019581,0.038495&z=15","Data migrated to GIS","True","Freehold","N+N (Resilient)"
+"XOM (OLDMTX)","Oldham","LTC","[""NFV""]","NORTH WEST","Normal","Unit P
+Birch Industrial Estate
+Whittle Lane 
+Heywood, OL10 2SX","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Oldham_Floorplans?csf=1&e=NKpbgI","http://maps.google.co.uk/maps?q=53.572518,-2.242756&num=1&t=h&sll=53.572069,-2.240743&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=53.573397,-2.245502&spn=0.037816,0.07699&z=14","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XAN (ACTMTX)","Acton","MTX","[""Gi-LAN"",""CHE""]","LONDON","Restricted","50 Brunel Road
+West Way Industrial Estate 
+Acton
+London, W3 7XR","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Acton_Floorplan.pdf?csf=1&web=1&e=EPnSDk","https://www.google.com/maps/@51.5196701,-0.2554939,170m/data=!3m1!1e3","Data migrated to GIS.","True","Leasehold","N+N (Resilient)"
+"XBL (BTLMTX)","Bristol","MTX",,"SOUTH WEST","Normal","Unit 1145, Aztec West
+Almondsbury 
+Bristol
+BS32 4TF","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Bristol_Floorplans?csf=1&web=1&e=v3OPot","https://www.google.co.uk/maps?q=51.541918,-2.580478&num=1&t=h&sll=51.542046,-2.580797&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.542046,-2.580797&spn=0.004951,0.009624&z=17","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XCF (CDFMTX)","Cardiff","MTX","[""RA""]","WALES","Normal","Links Business Park. 
+Fortran Road
+Cardiff
+CF3 0LT","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Cardiff_Floorplan.pdf?csf=1&web=1&e=rEAHsc","http://maps.google.co.uk/maps?q=51.529478,-3.08394&num=1&t=h&sll=51.529367,-3.082953&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.529365,-3.084991&spn=0.009905,0.02738&z=16""","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XCE (CSLMTX)","Carlisle","MTX","[""RA""]","NORTH WEST","Normal","Kings Drive
+Kingmoor Park South
+Carlisle
+CA6 4RD","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Carlise_Floorplan.pdf?csf=1&web=1&e=GyYpAH","http://maps.google.co.uk/maps?q=54.918723,-2.965922&num=1&t=h&sll=54.921343,-2.966183&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=54.923541,-2.957554&spn=0.018299,0.038495&z=15","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XCY (CLYMTX)","Crawley","MTX","[""RA""]","SOUTH","Normal","Crawley Vector II
+Newton Road
+Manor Royal Estate 
+Crawley, RH10 9TT","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Crawley_Floorplan.pdf?csf=1&web=1&e=dz3uxd","http://maps.google.co.uk/maps?q=51.131187,-0.174065&num=1&t=h&sll=51.116697,-0.1333&sspn=0.083612,0.150932&hl=en&ie=UTF8&ll=51.134689,-0.157843&spn=0.019981,0.038495&z=15","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XCN (CYNMTX)","Croydon","MTX","[""RA""]","LONDON","Normal","Unit 9, Peterwood Park
+Peterwood Way
+Croydon
+CR0 4UQ","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Croydon_Floorplan.pdf?csf=1&web=1&e=nrCcUf","http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=CR0+4UQ&sll=54.923541,-2.957554&sspn=0.018299,0.038495&g=54.918723,-2.965922&ie=UTF8&hq=&hnear=Croydon,+Surrey+CR0+4UQ,+United+Kingdom&ll=51.375909,-0.124438&spn=0.004969,0.009624&t=h&z=17","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XER (ESHMTX)","Esher","MTX",,"LONDON","Normal","30 Avro Way
+West Park
+Weybridge
+KT13 0YU","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Esher_Floorplan.pdf?csf=1&web=1&e=Mbf1gp","http://maps.google.co.uk/maps?q=51.347029,-0.478114&num=1&t=h&sll=51.350021,-0.474576&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.346647,-0.478018&spn=0.009945,0.019248&z=16","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"TGW (GLWMTX)","Glasgow","MTX",,"SCOTLAND","Normal","Unit 5, 9 South Avenue
+Clydebank Business Park 
+Clydebank
+Dumbartonshire, G81 2NR","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Glasgow_Floorplan.pdf?csf=1&web=1&e=VDm0tr","http://maps.google.co.uk/maps?q=55.905055,-4.413444&num=1&t=h&sll=55.90575,-4.413591&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=55.905351,-4.411129&spn=0.008925,0.019248&z=16","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XKS (KCSMTX)","Kings Cross","MTX",,"LONDON","Normal","233-241 Grays Inn Road
+Kings Cross
+London
+WC1X 8RB","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/KingsCross_Floorplans?csf=1&e=dgaVes","http://maps.google.co.uk/maps?q=51.527956,-0.1192&num=1&t=h&sll=51.52818,-0.119332&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.528577,-0.121922&spn=0.004953,0.009624&z=17","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XLR (LCTMTX)","Leicester","MTX",,"MIDLANDS","Normal","Centurion Way
+Meridian Business Park 
+Leicester
+LE19 1WH","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Leicester_Floorplans?csf=1&web=1&e=tgBHpw","http://maps.google.co.uk/maps?q=52.607472,-1.191823&num=1&t=h&sll=52.608802,-1.194721&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=52.607398,-1.191917&spn=0.004834,0.009624&z=17","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XNY (NBYMTX)","Newbury","MTX",,"THAMES VALLEY","Normal","Canal House Hambridge Road Newbury  Berkshire, RG14 5XF","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Newbury_Floorplans?csf=1&web=1&e=zcHvIU","http://maps.google.co.uk/maps?q=51.400812,-1.299412&num=1&t=h&sll=51.400401,-1.298728&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.400401,-1.298728&spn=0.019866,0.038495&z=15","Data migrated to GIS
+","False","Leasehold","N+N (Resilient)"
+"XNE (NWCMTX)","Newcastle","MTX",,"NORTH EAST","Normal","19 Tower Road
+Glover
+Washington 
+Tyne and Wear, NE37 2SH","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Newcastle_Floorplans?csf=1&web=1&e=UHBAGC","http://maps.google.co.uk/maps?q=54.909753,-1.511114&num=1&t=h&sll=54.908657,-1.511366&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=54.908655,-1.515427&spn=0.009153,0.019248&z=16","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XOD (OXFMTX)","Oxford","MTX","[""Amitie""]","THAMES VALLEY","Normal","Alex Issigonis Way
+Oxford Business Park (North) 
+Cowley
+OX4 2JZ","True","/:f:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Oxford_Floorplans?csf=1&web=1&e=S9O6P8","http://maps.google.co.uk/maps?q=51.733979,-1.206393&num=1&t=h&sll=51.734351,-1.207542&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=51.733918,-1.206525&spn=0.00493,0.009624&z=17","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XRM (RHMMTX)","Rotherham","MTX",,"NORTH EAST","Normal","Unit 2 Shepcote Business Park
+Europa Drive 
+Tinsley Park
+Sheffield, S9 1XT","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Rotherham_Floorplan.pdf?csf=1&web=1&e=aKQsN0","http://maps.google.co.uk/maps?q=53.40114,-1.405778&num=1&t=h&sll=53.396568,-1.407906&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=53.399528,-1.409447&spn=0.009493,0.019248&z=16","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XSN (SHTMTX)","Southampton","MTX","[""Amitie""]","SOUTH","Normal","Unit 1 Chandlers Park
+School Lane 
+Chandlers Ford Industrial Estate 
+Southampton, SO53 4DG","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Southampton_Floorplan.pdf?csf=1&web=1&e=Q7cMi5","http://maps.google.co.uk/maps?q=50.982033,-1.389787&num=1&t=h&sll=50.981373,-1.388919&sspn=0.010024,0.019248&hl=en&ie=UTF8&ll=50.981506,-1.386595&spn=0.020048,0.038495&z=15","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"XSD (STDMTX)","Stafford","MTX",,"NORTH WEST","Normal","Tollgate Drive
+Tollgate Ind. Estate 
+Beaconside
+ST16 3HS","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Stafford_Floorplan.pdf?csf=1&web=1&e=XUWTw6","http://maps.google.co.uk/maps?q=52.827328,-2.107133&num=1&t=h&sll=52.827436,-2.10827&sspn=0.006295,0.006295&hl=en&ie=UTF8&ll=52.828673,-2.112465&spn=0.00962,0.019248&z=16","Data migrated to GIS","False","Freehold","N+N (Resilient)"
+"XSY (SNYMTX)","Swanley","MTX",,"SOUTH EAST","Normal","Unit 9
+Capstan Court
+Crossways 
+Dartford, DA2 6QG","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Swanley_Floorplan.pdf?csf=1&web=1&e=JnXmui","http://maps.google.co.uk/maps?q=51.452466,0.247568&num=1&t=h&sll=51.452537,0.248199&sspn=0.009922,0.019248&hl=en&ie=UTF8&ll=51.453151,0.244532&spn=0.009922,0.019248&z=16","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"TWN (WTNMTX)","Warrington","MTX",,"NORTH WEST","Normal","Unit 25
+Grosvenor Grange Industrial Estate
+Pipe Lane
+Warrington, WA1 4SF","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/MTX/Warrington_Floorplan.pdf?csf=1&web=1&e=1nMZ5d","http://maps.google.co.uk/maps?q=53.40592,-2.547626&num=1&t=h&sll=53.405829,-2.54586&sspn=0.009492,0.019248&hl=en&ie=UTF8&ll=53.405733,-2.54712&spn=0.009492,0.019248&z=16","Data migrated to GIS","False","Leasehold","N+N (Resilient)"
+"FMYN31","Albany Park","Redstream",,"THAMES VALLEY","Normal","ALBANY PARK
+CAMBERLEY
+SURREY
+GU16 7PL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/FMYN31.pdf?CT=1606995283562&OR=ItemsView","https://www.google.com/maps/place/51°19%2701.1%22N+0°45%2710.9%22W/@51.3169637,-0.754117,309m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.3169722!4d-0.7530278","Data migrated to GIS","False","Leasehold","N only"
+"CHMN21","Arle Road","Redstream",,"SOUTH WEST","Normal","UNIT 18, CHELTENHAM TRADE PARK,
+ARLE ROAD
+CHELTENHAM
+GLOUCESTERSHIRE
+GL51 8LZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CHMN21.pdf?CT=1607094943140&OR=ItemsView","https://www.google.com/maps/place/51°54%2722.9%22N+2°05%2742.1%22W/@51.9062353,-2.0954199,304m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.9063611!4d-2.0950278","Data migrated to GIS","False","Leasehold","N only"
+"PRDTB1","Asco Road EAM","Redstream",,"SCOTLAND","Normal","ASCO ROAD
+PETERHEAD
+ABERDEENSHIRE
+AB42 3AA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PRDTB1.pdf","https://www.google.com/maps/place/57°28%2740.8%22N+1°47%2756.1%22W/@57.4779626,-1.8007513,550m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.478!4d-1.7989278","Data migrated to GIS","False","Leasehold","N only"
+"AZTCD1 & AZTCD2","Aztec West","Redstream","[""RA""]","SOUTH WEST","Normal","AZTEC WEST
+BRISTOL
+AVON
+BS32 4RY","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/AZTCD1%20%26%20AZTCD2.pdf","https://www.google.com/maps/place/51°32%2735.9%22N+2°34%2738.8%22W/@51.5429179,-2.5784459,696m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5433!4d-2.5774444","Data migrated to GIS","False","Leasehold","N only"
+"DFSNC1","Bankend Road","Redstream",,"SCOTLAND","Normal","BANKEND ROAD
+DUMFRIES
+
+DG1 4ZE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DFSNC1.pdf?CT=1607348236931&OR=ItemsView","https://www.google.com/maps/place/55°02%2753.1%22N+3°35%2731.6%22W/@55.048069,-3.593084,262m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.0480806!4d-3.5921056","Data Migrated to GIS","False","Leasehold","N only"
+"GCRTB1","Barnett Way","Redstream","[""RA""]","SOUTH WEST","Normal","BARNETT WAY
+GLOUCESTER
+GLOUCESTERSHIRE
+GL4 3RW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GCRTB1.pdf?CT=1607347464704&OR=ItemsView","https://www.google.com/maps/place/51%C2%B051'45.1%22N+2%C2%B012'23.5%22W/@51.8624668,-2.2067179,124m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.8625167!4d-2.2065278","Data migrated to GIS","False","Leasehold","N only"
+"DVSTB1","Bath Road","Redstream",,"SOUTH WEST","Normal","BATH ROAD
+DEVIZES
+WILTSHIRE
+SN10 1XA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DVSTB1.pdf","https://www.google.com/maps/place/51%C2%B021'04.5%22N+2%C2%B000'53.9%22W/@51.3511996,-2.015749,248m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.3512528!4d-2.0149694","Data migrated to GIS","False","Leasehold","N only"
+"HTE","Beckwithshaw","Redstream",,"NORTH EAST","Normal","BRISCOE RIDGE LANE, BECKWITHSHAW
+HARROGATE
+NORTH YORKSHIRE
+HG3 1QY","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/HTE.pdf?CT=1607345621755&OR=ItemsView","https://www.google.com/maps/place/53°57%2713.9%22N+1°36%2728.7%22W/@53.9538588,-1.6084963,185m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.9538694!4d-1.6079611","Data migrated to GIS","False","Leasehold","N only"
+"SHTN03","Belgrave Road","Redstream","[""RA""]","SOUTH","Normal","BELGRAVE ROAD
+SOUTHAMPTON
+HAMPSHIRE
+SO17 3AN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SHTN03.pdf?CT=1613731448953&OR=ItemsView","https://www.google.com/maps/place/50°55%2752.6%22N+1°22%2759.8%22W/@50.9312497,-1.3836014,160m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.9312889!4d-1.3832889","Data migrated to GIS","False","Leasehold","N only"
+"LMSCN2","Black Lane","Redstream",,"MIDLANDS","Normal","BLACK LANE
+LEAMINGTON SPA
+WARWICKSHIRE
+CV32 4UA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LMSCN2.pdf?CT=1607342909580&OR=ItemsView","https://www.google.com/maps/place/52%C2%B017'39.5%22N+1%C2%B031'08.3%22W/@52.2942235,-1.5193486,177m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.2943028!4d-1.5189639","Data migrated to GIS","False","Leasehold","N only"
+"SHD","Blast Lane","Redstream",,"NORTH EAST","Normal","BLAST LANE
+SHEFFIELD
+SOUTH YORKSHIRE
+S4 7TA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SHD.pdf?CT=1607092594674&OR=ItemsView","https://www.google.com/maps/place/53°23%2710.8%22N+1°27%2720.5%22W/@53.386353,-1.456307,216m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.3863417!4d-1.4556972","Data migrated to GIS","False","Leasehold","N only"
+"BFDTB1","Bowling Back Lane","Redstream",,"NORTH EAST","Normal","BOWLING BACK LANE
+BRADFORD
+YORKSHIRE
+BD4 8SL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BFDTB1.pdf?CT=1607350023132&OR=ItemsView","https://www.google.com/maps/place/53%C2%B047'11.4%22N+1%C2%B044'17.1%22W/@53.7866406,-1.7387861,369m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7865111!4d-1.738075","Data migrated to GIS","False","Leasehold","N only"
+"NULTB1","Brampton Industrial Estate","Redstream","[""RA""]","NORTH WEST","Normal","CROFT ROAD
+NEWCASTLE-UNDER-LYME
+STAFFORDSHIRE
+ST5 0SR","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NULTB1.pdf?CT=1607349459059&OR=ItemsView","https://www.google.com/maps/place/53%C2%B000'59.5%22N+2%C2%B013'38.5%22W/@53.0165324,-2.2278051,191m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.0165306!4d-2.2273528","Data migrated to GIS","False","Leasehold","N only"
+"IGNN01","Brewery Road","Redstream","[""RA""]","LONDON","Normal","BREWERY ROAD
+LONDON
+LONDON
+N7 9NT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/IGNN01.pdf?CT=1607348629997&OR=ItemsView","https://www.google.com/maps/place/51°32%2741.3%22N+0°07%2726.2%22W/@51.5448172,-0.1243613,153m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5448056!4d-0.1239444","Data migrated to GIS","False","Leasehold","N only"
+"ABNTB1","Bridge of Don","Redstream",,"SCOTLAND","Normal","WOODSIDE ROAD
+ABERDEEN
+ABERDEENSHIRE
+AB23 8EF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ABNTB1.pdf?CT=1607348220506&OR=ItemsView","https://www.google.com/maps/place/57°11%2719.6%22N+2°05%2729.9%22W/@57.1886981,-2.0924219,272m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.1887778!4d-2.0916472","Data migrated to GIS","False","Leasehold","N only"
+"WHD","Brooklands Drive","Redstream",,"NORTHERN IRELAND","Normal","BROOKLANDS DRIVE
+CARRICKFERGUS
+COUNTY ANTRIM
+BT38 9SL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WHD.pdf?CT=1607347649682&OR=ItemsView","https://www.google.com/maps/place/54°45%2719.4%22N+5°43%2703.4%22W/@54.7554057,-5.7178266,144m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.7553944!4d-5.7176","Data migrated to GIS","False","Freehold","N only"
+"SHDTR1","Brookshaw Park","Redstream","[""RA""]","NORTH EAST","Normal","RUSSELL STREET
+SHEFFIELD
+SOUTH YORKSHIRE
+S3 8RW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SHDTR1.pdf?CT=1607347098178&OR=ItemsView","https://www.google.com/maps/place/53°23%2716.1%22N+1°28%2723.1%22W/@53.3878265,-1.4737687,297m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.3878028!4d-1.4730833","Data migrated to GIS","False","Leasehold","N only"
+"ACTN01","Brunel Road","Redstream","[""RA"",""OpX""]","LONDON","Restricted","BRUNEL ROAD
+LONDON
+MIDDLESEX
+W3 7XR","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ACTN01.pdf?CT=1607346353495&OR=ItemsView","https://www.google.com/maps/place/51°31%2712.5%22N+0°15%2706.3%22W/@51.5201821,-0.2521944,248m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5201333!4d-0.2517583","Data migrated to GIS","True","Leasehold","N+N (Full A&B)"
+"BDEN04 - 10","Bude Creathorne Farm","Redstream","[""Amitie""]","South West","Normal","CREATHORNE FARM,
+BUDE,
+CORNWALL EX23 0NE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BDEN04%20-10.pdf","https://www.google.com/maps/place/50°47%2752.1%22N+4°32%2722.4%22W/@50.7978164,-4.5417517,738m","Data migrated to GIS","False","Freehold","Mixed (Both N & N+N)"
+"BDEN02 & BDEN03","Bude Kings Hill","Redstream",,"SOUTH WEST","Normal","KINGS HILL INDUSTRIAL ESTATE
+BUDE
+CORNWALL
+EX23 8QN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BDEN02%20%26%20BDEN03.pdf?CT=1607345359806&OR=ItemsView","https://www.google.com/maps/place/50°49%2714.9%22N+4°31%2756.8%22W/@50.8207661,-4.5329079,248m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.8208083!4d-4.5324333","Data migrated to GIS","False","Leasehold","N only"
+"POLN02","Cabot Lane","Redstream","[""RA"",""Amitie""]","SOUTH","Normal","CABOT LANE
+POOLE
+DORSET
+BH17 ZHX","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/POLN02.pdf?CT=1607342503996&OR=ItemsView","https://www.google.com/maps/place/50°44%2737.9%22N+1°59%2712.3%22W/@50.7436997,-1.9875483,294m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.74385!4d-1.9867444","Data migrated to GIS","False","Freehold","N+N (Full A&B)"
+"SNDTM1","Camberwell Way","Redstream",,"NORTH EAST","Normal","CAMBERWELL WAY
+SUNDERLAND
+TYNE AND WEAR
+SR3 3XN","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SNDTM1.pdf?csf=1&web=1&e=Jg3AGA","https://www.google.com/maps/place/54°51%2741.9%22N+1°25%2746.1%22W/@54.8616979,-1.4301842,288m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.8616361!4d-1.4294722","Data migrated to GIS","False","Leasehold","N only"
+"CELL01","Cellerhead S/S EAM","Redstream",,"MIDLANDS","Normal","ROWNALL ROAD
+STOKE-ON-TRENT
+STAFFORDSHIRE
+ST9 0BS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CELL01.pdf?CT=1607352833126&OR=ItemsView","https://www.google.com/maps/place/53°02%2724.7%22N+2°05%2705.5%22W/@53.0402026,-2.0852551,151m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.0401889!4d-2.0848472","Data migrated to GIS","False","Leasehold","N only"
+"LLDTE1","Centurion Way","Redstream","[""RA""]","North West","Normal","CENTURION WAY
+LEYLAND
+LANCASHIRE
+PR26 6TZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LLDTE1.pdf?CT=1607353444018&OR=ItemsView","https://www.google.com/maps/place/53%C2%B042'30.7%22N+2%C2%B041'55.1%22W/@53.7084777,-2.6995099,393m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7085139!4d-2.6986417","Data migrated to GIS","False","Leasehold","N only"
+"KNLTS1","Chancel Place","Redstream",,"NORTH WEST","Normal","CHANCEL PLACE
+KENDAL
+CUMBRIA
+LA9 6NZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/KNLTS1.pdf?CT=1613728854938&OR=ItemsView","https://www.google.com/maps/place/54°20%2739.3%22N+2°44%2712.9%22W/@54.3442069,-2.7373209,183m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.3442444!4d-2.7369222","Data migrated to GIS","False","Leasehold","N only"
+"SOSTN1","Chandlers Way","Redstream",,"ANGLIA","Normal","CHANDLERS WAY
+SOUTHEND ON SEA
+ESSEX
+SS2 5SE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SOSTN1.pdf?CT=1607355120719&OR=ItemsView","https://www.google.com/maps/place/51°33%2744.5%22N+0°42%2729.5%22E/@51.5623821,0.7077233,227m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5623722!4d0.7082","Data migrated to GIS","False","Leasehold","N only"
+"BTN","Cheapside","Redstream","[""RA""]","SOUTH","Normal","CHEAPSIDE
+BRIGHTON
+EAST SUSSEX
+BN1 4GD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTN.pdf?CT=1607355781858&OR=ItemsView","https://www.google.com/maps/place/50°49%2756.0%22N+0°08%2731.0%22W/@50.8321982,-0.1422372,159m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.8322111!4d-0.1419417","Data migrated to GIS","False","Leasehold","N only"
+"RFDN11","Church Road","Redstream",,"LONDON","Normal","CHURCH ROAD
+ROMFORD
+ESSEX
+RM3 0HU","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/RFDN11.pdf","https://www.google.com/maps/place/51°35%2745.5%22N+0°14%2724.5%22E/@51.5959644,0.2379477,614m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d51.5959611!4d0.2401417","Data migrated to GIS","False","Leasehold","N only"
+"YRK","Cinder Lane","Redstream",,"NORTH EAST","Normal","CINDER LANE
+YORK
+NORTH YORKSHIRE
+YO26 4XJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/YRK.pdf?CT=1607356693731&OR=ItemsView","https://www.google.com/maps/place/53%C2%B057'25.0%22N+1%C2%B005'45.5%22W/@53.9569266,-1.0962192,186m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.9569528!4d-1.0959694","Data migrated to GIS","False","Leasehold","N only"
+"DNDTC1","Claverhouse","Redstream",,"SCOTLAND","Normal","EMMOCK ROAD
+DUNDEE
+ANGUS
+DD4 9FF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DNDTC1.pdf?CT=1607357394643&OR=ItemsView","https://www.google.com/maps/place/56°29%2737.7%22N+2°56%2759.2%22W/@56.4937712,-2.9499881,102m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d56.4938!4d-2.9497861","Data migrated to GIS","False","Leasehold","N only"
+"DLNTC1","Cleveland Trading Estate","Redstream",,"NORTH EAST","Normal","CLEVELAND TRADING ESTATE
+DARLINGTON
+COUNTY DURHAM
+DL1 2PB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DLNTC1.pdf?CT=1607357765260&OR=ItemsView","https://www.google.com/maps/place/54°32%2709.2%22N+1°32%2748.2%22W/@54.5358322,-1.5467985,230m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.5358778!4d-1.5467333","Data migrated to GIS","False","Leasehold","N only"
+"CAMN41","Clifton Road","Redstream",,"ANGLIA","Normal","CLIFTON ROAD
+CAMBRIDGE
+CAMBRIDGESHIRE
+CB1 7ED","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CAMN41.pdf?CT=1607432450871&OR=ItemsView","https://www.google.com/maps/place/52°11%2735.8%22N+0°08%2722.9%22E/@52.1932849,0.1393657,243m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.1932861!4d0.1396944","Data migrated to GIS","False","Leasehold","N only"
+"DCT","Cow Lane","Redstream",,"THAMES VALLEY","Normal","COW LANE
+DIDCOT
+OXFORDHSIRE
+OX11 7SZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DCT.pdf?CT=1607432809638&OR=ItemsView","https://www.google.com/maps/place/51%C2%B036'38.4%22N+1%C2%B014'22.0%22W/@51.6106399,-1.2397132,166m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.6106694!4d-1.2394333","Data migrated to GIS","False","Leasehold","N only"
+"COWL02","Cowley S/S EAM","Redstream",,"THAMES VALLEY","Normal","BLACKBERRY LANE OFF WATLINGTON ROAD
+OXFORD
+OXFORDSHIRE
+OX4 9BD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/COWL02.pdf?CT=1607433277531&OR=ItemsView","https://www.google.com/maps/place/51%C2%B042'40.0%22N+1%C2%B011'18.4%22W/@51.711124,-1.1887666,196m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.7111056!4d-1.1884528","Data migrated to GIS","False","Leasehold","N only"
+"INVN41","Cromwell Buildings","Redstream","[""RA""]","SCOTLAND","Normal","LOTLAND STREET
+INVERNESS
+INVERNESS-SHIRE
+IV1 1YL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/INVN41.pdf?CT=1607434076281&OR=ItemsView","https://www.google.com/maps/place/57°29%2715.2%22N+4°13%2737.7%22W/@57.487461,-4.227585,167m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.4875472!4d-4.2271361","Data migrated to GIS","False","Leasehold","N only"
+"CKNN03","Cropmead Trading Estate","Redstream","[""Amitie""]","SOUTH WEST","Normal","CROPMEAD TRADING ESTATE
+CREWKERNE
+SOMERSET
+TA18 7HQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CKNN03.pdf?CT=1607436121978&OR=ItemsView","https://www.google.com/maps/place/50°53%2700.9%22N+2°47%2716.9%22W/@50.8836424,-2.7889237,397m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.8835889!4d-2.7880389","Data migrated to GIS","False","Freehold","N+N (Full A&B)"
+"TNTTN1","Crown Industrial Estate","Redstream","[""Amitie""]","SOUTH WEST","Normal","CROWN INDUSTRIAL ESTATE
+TAUNTON
+SOMERSET
+TA2 8QY","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/TNTTN1_TNTN02.pdf?CT=1607436574620&OR=ItemsView","https://www.google.com/maps/place/51°01%2740.2%22N+3°04%2746.4%22W/@51.0278995,-3.0802343,314m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.0278361!4d-3.0795639","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"RCR","Cuxton Road","Redstream","[""RA""]","SOUTH EAST","Normal","CUXTON ROAD
+ROCHESTER
+KENT
+ME2 2BT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/RCR.pdf?CT=1607436904906&OR=ItemsView","https://www.google.com/maps/place/51°23%2744.6%22N+0°29%2724.9%22E/@51.3958335,0.4900124,198m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.3957333!4d0.4902528","Data migrated to GIS","False","Leasehold","N only"
+"GFDCD1","Deaconfield Industrial Estate","Redstream","[""RA""]","SOUTH","Normal","UNIT 8, DEACON FIELD IND EST
+GUILDFORD
+SURREY
+GU2 8YT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GFDCD1.pdf","https://www.google.com/maps/place/51°14%2743.4%22N+0°35%2733.6%22W/@51.2453977,-0.5948662,619m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d51.2453944!4d-0.5926722","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"DKTN08","Dock Street","Redstream","[""RA""]","LONDON","Normal","DOCK STREET
+LONDON
+LONDON
+E1 8NA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DKTN08.pdf?CT=1607610389814&OR=ItemsView","https://www.google.com/maps/place/51°30%2733.5%22N+0°04%2706.1%22W/@51.5092976,-0.0689909,354m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5093139!4d-0.0683472","Data migrated to GIS","False","Leasehold","N only"
+"MDBTD1","Drake Court","Redstream",,"NORTH EAST","Normal","DRAKE COURT
+MIDDLESBROUGH
+CLEVELAND
+TS2 1RS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MDBTD1.pdf?CT=1607438533691&OR=ItemsView","https://www.google.com/maps/place/54°34%2753.9%22N+1°15%2711.9%22W/@54.5816309,-1.2555051,573m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d54.5816278!4d-1.2533111","Data migrated to GIS","False","Leasehold","N only"
+"DNFNP1","Dunfermline Pitreavie EAM","Redstream",,"SCOTLAND","Normal","QUEENSFERRY ROAD
+DUNFERMLINE
+FIFE
+KY11 8PU","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DNFNP1.pdf?CT=1607412671802&OR=ItemsView","https://www.google.com/maps/place/56%C2%B002'56.9%22N+3%C2%B026'14.6%22W/@56.0491431,-3.4375473,163m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d56.049125!4d-3.4373889","Data Migrated to GIS","False","Leasehold","N only"
+"DHMNU1","Durham University","Redstream",,"NORTH EAST","Normal","STOCKTON ROAD
+DURHAM
+DURHAM
+DH1 3LE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DHMNU1.pdf?CT=1607413450971&OR=ItemsView","https://www.google.com/maps/place/54°46%2700.0%22N+1°34%2718.5%22W/@54.7667847,-1.5720104,149m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.7666722!4d-1.5717917","Data Migrated to GIS","False","Leasehold","N only"
+"BFEC01","East Central","Redstream","[""RA""]","NORTHERN IRELAND","Normal","GLOUCESTER STREET
+BELFAST
+
+BT1 4LS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BFEC01.pdf?CT=1607413993837&OR=ItemsView","https://www.google.com/maps/place/54°35%2747.3%22N+5°55%2733.1%22W/@54.5964055,-5.926408,230m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.5964722!4d-5.9258556","Data migrated to GIS","False","Leasehold","N only"
+"EBCTC1","Eccles-by-Coldstream EAM","Redstream",,"NORTH EAST","Normal","COLDSTREAM ROAD
+ECCLES BY COLDSTREAM
+BERWICKSHIRE
+TD12 4LX","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EBCTC1.pdf?CT=1607414471223&OR=ItemsView","https://www.google.com/maps/place/55°40%2705.2%22N+2°19%2734.1%22W/@55.6680692,-2.3270462,287m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.6681222!4d-2.32615","Data migrated to GIS","False","Leasehold","N only"
+"EDBTG1","Edinburgh - South Gyle","Redstream","[""PX"",""RA"",""OpX""]","SCOTLAND","Normal","Unit 4/5, CLOCKTOWER ESTATE
+EDINBURGH
+MIDLOTHIAN
+EH12 9EB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EDBTG1.pdf?CT=1607690871478&OR=ItemsView","https://www.google.com/maps/place/55°55%2745.5%22N+3°17%2742.5%22W/@55.9292338,-3.2955496,309m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.9292944!4d-3.2951306","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BHWCN1","Elstree Gate","Redstream",,"LONDON","Normal","ELSTREE GATE
+BOREHAMWOOD
+HERTFORDSHIRE
+WD6 1JS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BHWCN1.pdf?CT=1607414945961&OR=ItemsView","https://www.google.com/maps/place/51°39%2731.9%22N+0°15%2723.3%22W/@51.6588598,-0.2570412,153m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.6588611!4d-0.2564722","Data migrated to GIS","False","Leasehold","N only"
+"CAMN02","Ely Road","Redstream",,"ANGLIA","Normal","ELY ROAD
+CAMBRIDGE
+CAMBRIDGESHIRE
+CB24 6UB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CAMN02.pdf?CT=1607415423842&OR=ItemsView","https://www.google.com/maps/place/52%C2%B014'41.8%22N+0%C2%B010'12.0%22E/@52.2449413,0.1698746,123m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.2449472!4d0.1699972","Data migrated to GIS","False","Leasehold","N only"
+"EVMN01","Evesham","Redstream",,"MIDLANDS","Normal","ENTERPRISE WAY
+EVESHAM
+WORCESTERSHIRE
+WR11 1GS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EVMN01.pdf?CT=1607415912061&OR=ItemsView","https://www.google.com/maps/place/52°04%2719.8%22N+1°56%2704.1%22W/@52.0720394,-1.9349262,194m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.0721667!4d-1.9344694","Data migrated to GIS","False","Leasehold","N only"
+"EXR & EXRN03","Exeter","Redstream","[""Amitie""]","SOUTH WEST","Normal","OTTER COURT
+EXETER
+DEVON
+EX2 8PF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EXR_EXRN03.pdf","https://www.google.com/maps/place/50°41%2752.4%22N+3°31%2734.5%22W/@50.6976395,-3.5265896,252m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.6978833!4d-3.5262472","Data migrated to GIS","False","Leasehold","Mixed (Both N & N+N)"
+"THOTC1","Farice Cable Landing","Redstream",,"SCOTTISH HIGHLANDS & ISLANDS","Normal","OFF B836
+THURSO
+ORKNEY
+KW14 8UB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/THOTC1.pdf?CT=1607416914207&OR=ItemsView","https://www.google.com/maps/place/58°35%2724.9%22N+3°22%2728.1%22W/@58.5902347,-3.3753626,265m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d58.5902611!4d-3.3744667","Data migrated to GIS","False","Leasehold","N only"
+"IPWTN1","Farthing Road","Redstream","[""RA""]","ANGLIA","Normal","FARTHING ROAD
+IPSWICH
+SUFFOLK
+IP1 5AP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/IPWTN1.pdf?CT=1607417482733&OR=ItemsView","https://www.google.com/maps/place/52°03%2759.5%22N+1°06%2750.4%22E/@52.0664522,1.1135854,245m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.0665278!4d1.1139889","Data migrated to GIS","False","Leasehold","N only"
+"FLNTT1","Felton EAM","Redstream",,"NORTH EAST","Normal","
+FELTON
+NORTHUMBERLAND
+NE65 9QD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/FLNTT1.pdf?CT=1607442057542&OR=ItemsView","https://www.google.com/maps/place/55°16%2751.8%22N+1°43%2729.1%22W/@55.2809641,-1.7249965,145m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.2810583!4d-1.7247361","Data migrated to GIS","False","Leasehold","N only"
+"FTATA1","Fort Augustus S/S co-lo","Redstream",,"SCOTLAND","Normal","
+FORT AUGUSTUS
+INVERNESS SHIRE
+PH32 4BT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/FTATA1.pdf?CT=1613732170585&OR=ItemsView","https://www.google.com/maps/place/57%C2%B008'13.7%22N+4%C2%B043'08.1%22W/@57.1371529,-4.7211051,537m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d57.13715!4d-4.7189111","Data migrated to GIS","False","Leasehold","N only"
+"ASH","Fosters Road","Redstream",,"SOUTH EAST","Normal","FOSTER ROAD
+ASHFORD
+KENT
+TN24 0SJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ASH.pdf?CT=1607442720222&OR=ItemsView","https://www.google.com/maps/place/51°07%2756.2%22N+0°54%2712.2%22E/@51.1322752,0.9026255,313m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.1322667!4d0.9034","Data migrated to GIS","False","Leasehold","N only"
+"WVHTF1","Fryer Street","Redstream","[""RA""]","MIDLANDS","Normal","FRYER STRET
+WOLVERHAMPTON
+WEST MIDLANDS
+WV1 1HT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WVHTF1.pdf?CT=1607443296835&OR=ItemsView","https://www.google.com/maps/place/52%C2%B035'14.6%22N+2%C2%B007'22.9%22W/@52.5873699,-2.1237028,220m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.5873806!4d-2.1230389","Data migrated to GIS","False","Leasehold","N only"
+"CTNN01","Garris Court","Redstream","[""Amitie""]","SOUTH WEST","Normal","GARRIS COURT
+CREDITON
+DEVON
+EX17 1DN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CTNN01.pdf?CT=1607443971583&OR=ItemsView","https://www.google.com/maps/place/50°47%2729.8%22N+3°38%2717.9%22W/@50.7916355,-3.6392226,251m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.7916194!4d-3.6383083","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"GWK","Gatwick","Redstream",,"SOUTH EAST","Normal","GATWICK AIRPORT
+CRAWLEY
+SURREY
+RH6 0NP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GWK.pdf","https://www.google.com/maps/place/51%C2%B009'24.6%22N+0%C2%B009'41.9%22W/@51.1568309,-0.1621949,310m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.1568333!4d-0.1616389","Data migrated to GIS","False","Leasehold","N only"
+"LSWN01","Global Switch 1","Redstream",,"LONDON","Normal","EAST INDIA DOCK ROAD
+LONDON
+MIDDLESEX
+E14 9YY","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LSWN01.pdf?CT=1607505718237&OR=ItemsView","https://www.google.com/maps/place/51%C2%B030'40.1%22N+0%C2%B000'22.0%22W/@51.5111846,-0.0068084,309m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5111444!4d-0.0061056","Data migrated to GIS","False","Leasehold","N only"
+"CBY","Gordon Road","Redstream",,"SOUTH EAST","Normal","GORDON ROAD
+CANTERBURY
+KENT
+CT1 3PP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CBY.pdf?CT=1607506486286&OR=ItemsView","https://www.google.com/maps/place/51%C2%B016'24.9%22N+1%C2%B004'35.3%22E/@51.2736084,1.0759082,249m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.2735778!4d1.0764639","Data migrated to GIS","False","Leasehold","N only"
+"LDSN14","Gotts Road DC","Redstream",,"NORTH EAST","Normal","GOTTS ROAD
+LEEDS
+WEST YORKSHIRE
+LS12 1AD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LDSN14%26LDSN15.pdf?CT=1607507057551&OR=ItemsView","https://www.google.com/maps/place/53°47%2744.2%22N+1°33%2744.7%22W/@53.7955189,-1.5627851,293m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7956083!4d-1.562425","Data migrated to GIS","False","Leasehold","N only"
+"LDSN15","Gotts Road DC","Redstream",,"NORTH EAST","Normal","GOTTS ROAD
+LEEDS
+WEST YORKSHIRE
+LS12 1AD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LDSN14%26LDSN15.pdf?CT=1607507057551&OR=ItemsView","https://www.google.com/maps/place/53°47%2744.2%22N+1°33%2744.7%22W/@53.7955189,-1.5627851,293m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7956083!4d-1.562425","Data migrated to GIS","False","Leasehold","N only"
+"LIVN01","Grange Road","Redstream",,"SCOTLAND","Normal","GRANGE ROAD
+LIVINGSTON
+WEST LOTHIAN
+EH54 5DE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LIVN01.pdf?CT=1607420777725&OR=ItemsView","https://www.google.com/maps/place/55°54%2720.4%22N+3°29%2759.5%22W/@55.9056642,-3.5003956,223m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.9056611!4d-3.4998583","Data migrated to GIS","False","Leasehold","N only"
+"BMGV03","Gravelly Industrial Estate","Redstream",,"MIDLANDS","Normal","JARVIS WAY
+BIRMINGHAM
+WEST MIDLANDS
+B24 8TQ","False","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BMGV03.pdf?CT=1607423343204&OR=ItemsView","https://www.google.com/maps/place/52°30%2715.3%22N+1°50%2759.3%22W/@52.5042064,-1.8503255,304m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.50425!4d-1.8498056",,"False","Leasehold","N only"
+"DONTN1","Gresley House","Redstream",,"NORTH EAST","Normal","GRESLEY HOUSE
+DONCASTER
+SOUTH YORKSHIRE
+DN1 1PB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DONTN1.pdf?CT=1607421956979&OR=ItemsView","https://www.google.com/maps/place/53%C2%B031'29.5%22N+1%C2%B008'26.8%22W/@53.5248212,-1.1415589,296m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.5248722!4d-1.140775","Data migrated to GIS","False","Leasehold","N only"
+"BYR","Grey Abbots Road","Redstream",,"NORTHERN IRELAND","Normal","GREY ABBEY ROAD
+BALLYWALTER
+DOWN
+BT22 2NY","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BYR.pdf?CT=1607422429503&OR=ItemsView","https://www.google.com/maps/place/54°32%2733.1%22N+5°29%2706.1%22W/@54.5423884,-5.4853519,168m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.5425333!4d-5.485025","Data migrated to GIS","False","Freehold","N only"
+"NRWTN1","Hall Road","Redstream",,"ANGLIA","Normal","HALL ROAD
+NORWICH
+NORFOLK
+NR4 6DG","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NRWTN1.pdf?CT=1607422900516&OR=ItemsView","https://www.google.com/maps/place/52°36%2711.4%22N+1°17%2706.1%22E/@52.603136,1.2845672,256m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.6031722!4d1.2850278","Data migrated to GIS","False","Leasehold","N only"
+"OKNN01","Hameldown Road","Redstream","[""RA"",""Amitie""]","SOUTH WEST","Normal","HAMELDOWN ROAD
+OKEHAMPTON
+DEVON
+EX20 1UB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/OKNN01.pdf?CT=1607500024709&OR=ItemsView","https://www.google.com/maps/place/50°44%2728.5%22N+3°58%2746.3%22W/@50.7412476,-3.9796524,156m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.7412417!4d-3.9795194","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"TRON01","Harvey Road","Redstream",,"SOUTH WEST","Normal","HARVEY ROAD
+TRURO
+CORNWALL
+TR1 2XW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/TRON01.pdf?CT=1607500603296&OR=ItemsView","https://www.google.com/maps/place/50%C2%B015'19.8%22N+5%C2%B002'48.8%22W/@50.2554718,-5.0471919,158m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.2554944!4d-5.0468806","Data migrated to GIS","False","Leasehold","N only"
+"HRWN02","Heathrow","Redstream","[""RA""]","LONDON","Normal","SANCTUARY ROAD
+HOUNSLOW
+MIDDLESEX
+TW6 3JF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/HRWN02.pdf?CT=1607502922851&OR=ItemsView","https://www.google.com/maps/place/51°27%2722.3%22N+0°27%2724.7%22W/@51.4560876,-0.4570588,154m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4561917!4d-0.4568667","Data migrated to GIS","False","Leasehold","N only"
+"NRWN51","Hellesdon Park Road","Redstream","[""RA""]","ANGLIA","Normal","HELLESDON PARK ROAD
+NORWICH
+NORFOLK
+NR6 5DR","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NRWN51.pdf?CT=1607503393048&OR=ItemsView","https://www.google.com/maps/place/52%C2%B039'07.0%22N+1%C2%B015'17.5%22E/@52.6519115,1.2545027,150m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.6519472!4d1.2548583","Data Migrated to GIS","False","Leasehold","N only"
+"SOLN02","Highlands Road","Redstream",,"MIDLANDS","Normal","HIGHLANDS ROAD
+SOLIHULL
+WEST MIDLANDS
+B90 4NZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SOLN02.pdf?CT=1607503928993&OR=ItemsView","https://www.google.com/maps/place/52°23%2749.8%22N+1°47%2754.5%22W/@52.3970778,-1.7993418,302m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.3971583!4d-1.7984778","Data migrated to GIS","False","Leasehold","N only"
+"ABNTD1","Howe Moss Crescent","Redstream",,"SCOTLAND","Normal","HOWE MOSS CRESCENT
+DYCE
+ABERDEENSHIRE
+AB21 0GN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ABNTD1.pdf","https://www.google.com/maps/place/57°12%2722.5%22N+2°13%2723.5%22W/@57.2061581,-2.2235991,134m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.2062611!4d-2.2232","Data migrated to GIS","False","Leasehold","N only"
+"YRKTH1","Hudson Way","Redstream",,"NORTH EAST","Normal","GREAT NORTH WAY
+YORK
+YORKSHIRE
+YO26 6RN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/YRKTH1.pdf?CT=1607402137498&OR=ItemsView","https://www.google.com/maps/place/53%C2%B058'37.4%22N+1%C2%B007'39.6%22W/@53.9770675,-1.1278983,167m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.9770639!4d-1.1276694","Data migrated to GIS","False","Leasehold","N only"
+"GRSTB1","Huntingtower Park","Redstream",,"SCOTLAND","Normal","HUNTINGTPOWER PARK
+GLENROTHES
+FIFE
+KY6 3QF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GRSTB1.pdf","https://www.google.co.uk/maps/place/56°12%2724.3%22N+3°12%2701.0%22W/@56.206746,-3.2015644,285m","Data migrated to GIS","False","Leasehold","N only"
+"WAIP06","Imperial Park DC","Redstream",,"LONDON","Normal","IMPERIAL WAY
+WATFORD
+HERTFORDSHIRE
+WD24 4PP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WAIP06.pdf?CT=1607618473875&OR=ItemsView","https://www.google.com/maps/place/51%C2%B040'05.3%22N+0%C2%B023'41.2%22W/@51.6678848,-0.3954871,352m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.6681361!4d-0.3947833","Data migrated to GIS","False","Leasehold","N only"
+"IODN01","Isle of Dogs","Redstream","[""RA"",""OpX""]","LONDON","Normal","PRESTONS ROAD
+LONDON
+LONDON
+E14 9NP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/IODN01.pdf?CT=1607400931191&OR=ItemsView","https://www.google.com/maps/place/51%C2%B030'07.1%22N+0%C2%B000'32.9%22W/@51.5016575,-0.0094979,353m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5019806!4d-0.0091389","Data migrated to GIS","False","Leasehold","N only"
+"IVER02","Iver S/S EAM","Redstream",,"THAMES VALLEY","Normal","CHANDLERS HILL
+IVER HEATH
+BUCKINGHAMSHIRE
+SL0 0ED","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/IVER02.pdf?CT=1607400610951&OR=ItemsView","https://www.google.com/maps/place/51°32%2737.7%22N+0°29%2745.4%22W/@51.54372,-0.4961946,177m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5437972!4d-0.4959444","Data migrated to GIS","False","Leasehold","N only"
+"DNDN71","Kilspindie Road","Redstream","[""RA""]","SCOTLAND","Normal","KILSPINDIE
+DUNDEE
+ANGUS
+DD2 3QN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DNDN71.pdf?CT=1613729820406&OR=ItemsView","https://www.google.com/maps/place/56°28%2746.9%22N+3°00%2748.6%22W/@56.4797109,-3.0143925,314m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d56.4797028!4d-3.0134944","Data migrated to GIS","False","Leasehold","N only"
+"LPLTK1","King Edward Industrial Estate","Redstream","[""RA""]","NORTH WEST","Normal","GIBRALTAR ROW
+LIVERPOOL
+LANCASHIRE
+L3 7HJ","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LPLTK1.pdf?csf=1&web=1&e=W0a8xB","https://www.google.com/maps/@53.4112051,-2.9982628,3a,75y,280.67h,75.91t/data=!3m6!1e1!3m4!1sRr9z7mwDCFytuRNr9YoViA!2e0!7i16384!8i8192?entry=ttu","Data migrated to GIS","False","Leasehold","N only"
+"CTRTK1","Kingsfield Court","Redstream",,"NORTH WEST","Normal","KINGSFIELD COURT *DUP*
+CHESTER
+
+CH4 9RF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CTRTK1.pdf?CT=1607399332860&OR=ItemsView","https://www.google.com/maps/place/53°09%2746.4%22N+2°53%2749.8%22W/@53.1629837,-2.8975189,170m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.1628889!4d-2.8971778","Data migrated to GIS","False","Leasehold","N only"
+"WTNTK1","Kingsland Grange","Redstream","[""RA""]","NORTH WEST","Normal","KINGSLAND GRANGE
+WARRINGTON
+CHESHIRE
+WA1 4RW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WTNTK1.pdf","https://www.google.com/maps/place/53°24%2729.8%22N+2°31%2754.4%22W/@53.4081133,-2.532033,356m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.4082667!4d-2.5317889","Data migrated to GIS","False","Leasehold","N only"
+"PTHTL1","Ladeside Business Park","Redstream",,"SCOTLAND","Normal","LADESIDE BUSINESS PARK
+PERTH
+PERTHSHIRE
+PH1 5RZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PTHTL1.pdf?CT=1607397811644&OR=ItemsView","https://www.google.com/maps/place/56°24%2705.3%22N+3°26%2740.2%22W/@56.401429,-3.4445401,83m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d56.4014694!4d-3.4444861","Data migrated to GIS","False","Leasehold","N only"
+"MDE","Lake Road","Redstream",,"SOUTH EAST","Normal","LAKE ROAD
+AYLESFORD
+KENT
+ME20 7TQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MDE.pdf?CT=1607508074327&OR=ItemsView","https://www.google.com/maps/place/51°17%2729.8%22N+0°28%2702.0%22E/@51.291416,0.4659919,374m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.2916083!4d0.4672139","Data migrated to GIS","False","Leasehold","N only"
+"ABH","Leiston Road","Redstream",,"ANGLIA","Normal","LEISTON ROAD
+ALDEBURGH
+SUFFOLK
+IP15 5QD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ABH.pdf?CT=1606989253149&OR=ItemsView","https://www.google.com/maps/place/52°09%2747.6%22N+1°35%2733.1%22E/@52.1633549,1.5918954,367m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.1632111!4d1.5925194","Data Migrated to GIS","False","Freehold","N only"
+"NGMTL1","Lenton Lane","Redstream",,"MIDLANDS","Normal","EASTER PARK
+NOTTINGHAM
+NOTTINGHAMSHIRE
+NG7 2SD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NGMTL1.pdf","https://www.google.com/maps/place/52°56%2731.8%22N+1°10%2720.0%22W/@52.9419428,-1.1729864,360m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.9421639!4d-1.1722222","Data migrated to GIS","False","Leasehold","N only"
+"WONTL1","Lillyhall Depot EAM","Redstream",,"NORTH WEST","Normal","HALLWOOD ROAD
+WORKINGTON
+CUMBRIA
+CA14 4PW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WONTL1.pdf?CT=1607509353182&OR=ItemsView","https://www.google.com/maps/place/54°36%2730.9%22N+3°31%2747.9%22W/@54.6085861,-3.5310665,346m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d54.6085861!4d-3.5299722","Data migrated to GIS","False","Leasehold","N only"
+"BKBN41","Lions Drive","Redstream",,"NORTH WEST","Normal","LIONS DRIVE
+BLACKBURN
+LANCASHIRE
+BB1 2QS","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BKBN41.pdf?csf=1&web=1&e=BWIMBM","https://www.google.com/maps/place/53°43%2751.4%22N+2°26%2749.2%22W/@53.7308054,-2.4477218,354m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7309444!4d-2.4469972","Data migrated to GIS","False","Leasehold","N only"
+"CHTTN3","London - Chart Street","Redstream","[""PX"",""RA"",""OpX""]","Inner London","Normal","CHART STREET
+LONDON
+N1 6EF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CHTTN3.pdf?CT=1607511733363&OR=ItemsView","https://www.google.com/maps/place/51°31%2740.9%22N+0°05%2713.5%22W/@51.5280408,-0.0876382","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"INVTL1","Longman Road","Redstream",,"SCOTLAND","Normal","LONGMAN ROAD
+INVERNESS
+INVERNESHIRE
+IV1 1SA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/INVTL1.pdf?CT=1607512323187&OR=ItemsView","https://www.google.com/maps/place/57°29%2707.3%22N+4°13%2718.5%22W/@57.4853244,-4.2219686,161m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.4853667!4d-4.2218139","Data migrated to GIS","False","Leasehold","N only"
+"WTT","Low Road","Redstream",,"ANGLIA","Normal","LOW ROAD
+GREAT YARMOUTH
+NORFOLK
+NR29 4BJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WTT.pdf?CT=1607515241313&OR=ItemsView","https://www.google.com/maps/place/52°43%2703.3%22N+1°41%2725.7%22E/@52.7174188,1.6901876,181m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.7175722!4d1.6904806","Data migrated to GIS","False","Freehold","N only"
+"MDFTB1","MacDuff S/S EAM","Redstream",,"SCOTLAND","Normal","LAW OF DOUNE ROAD
+MACDUFF
+ABERDEENSHIRE
+AB44 1XP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MDFTB1.pdf?CT=1607514652424&OR=ItemsView",,"Data migrated to GIS","False","Leasehold","N only"
+"BHMTF1","Magreal Industrial Estate","Redstream","[""RA""]","West Midlands","Normal","FREETH STREET
+BIRMINGHAM
+WEST MIDLANDS
+B16 0QZ
+","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BHMTF1.pdf?CT=1607515822607&OR=ItemsView","https://www.google.com/maps/place/52°28%2751.2%22N+1°55%2741.2%22W/@52.4808185,-1.9285717,201m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4808944!4d-1.9281139","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"MCRCD2","Manchester - Units 3, 4 & 5 Piccadilly Trading Estate","Redstream","[""PX"",""RA"",""OpX""]","North West","Normal","GREAT ANCOATS STREET
+UNITS 3, 4 & 5 PICCADILLY TRADING ESTATE
+MANCHESTER
+M1 2NP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MCRCD2.pdf?CT=1614868974572&OR=ItemsView","https://www.google.com/maps/place/53°28%2742.9%22N+2°13%2718.8%22W/@53.4780161,-2.2217626,237m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.4785833!4d-2.2218889","Data migrated to GIS","False","Leasehold","N only"
+"PTBTN1","Maskew Avenue","Redstream",,"ANGLIA","Normal","MASKEW AVENUE
+PETERBOROUGH
+CAMBRIDGESHIRE
+PE1 2AS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PTBTN1.pdf?CT=1607517055432&OR=ItemsView","https://www.google.com/maps/place/52°35%2721.4%22N+0°15%2730.0%22W/@52.5891822,-0.2585831,182m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.5892639!4d-0.2583306","Data Migrated to GIS","False","Leasehold","N only"
+"SWNN03","Matrix Court","Redstream","[""RA""]","WALES","Normal","MATRIX COURT
+SWANSEA
+WEST GLAMORGAN
+SA7 9BB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SWNN03.pdf?CT=1607520305870&OR=ItemsView","https://www.google.com/maps/place/51°38%2749.4%22N+3°55%2748.2%22W/@51.6467655,-3.9300678,371m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.64705!4d-3.9300417","Data migrated to GIS","False","Leasehold","N only"
+"DFSN01","Maxwelltown Industrial Estate","Redstream",,"SCOTLAND","Normal","UNIT 5 BLOCK 2
+DUMFRIES
+DUMFRIES & GALLOWAY
+DG2 0NW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DFSN01.pdf","https://www.google.com/maps/place/55°04%2736.9%22N+3°37%2740.8%22W/@55.0769056,-3.6301943,684m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d55.0769056!4d-3.6280056","Data migrated to GIS","False","Leasehold","N only"
+"LDMS13","Melbourne Street DC","Redstream",,"NORTH EAST","Planned Closure","MELBOURNE STREET
+LEEDS
+WEST YORKSHIRE
+LS2 7PS","False","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LDMS13.pdf?CT=1607514382790&OR=ItemsView","https://www.google.com/maps/place/53%C2%B048'07.5%22N+1%C2%B032'08.9%22W/@53.8021767,-1.5363823,353m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.8020778!4d-1.5357917"," Closure Notice issued 25th April 2024
+","False","Leasehold","N only"
+"STEDN1","Meredith Road","Redstream",,"NORTHERN HOME COUNTIES","Normal","MEREDITH ROAD
+STEVENAGE
+HERTFORDSHIRE
+SG1 5QT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/STEDN1.pdf?CT=1607512460409&OR=ItemsView","https://www.google.com/maps/place/51°54%2755.9%22N+0°11%2703.9%22W/@51.9154442,-0.1848088,184m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.9155306!4d-0.1844083","Data migrated to GIS","False","Leasehold","N only"
+"DBY","Midland Road","Redstream",,"MIDLANDS","Normal","MIDLAND ROAD
+DERBY
+DERBYSHIRE
+DE1 2SN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DBY.pdf?CT=1607511696141&OR=ItemsView","https://www.google.com/maps/place/52%C2%B054'46.0%22N+1%C2%B027'46.2%22W/@52.912723,-1.463192,180m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.9127889!4d-1.4628194","Data migrated to GIS","False","Leasehold","N only"
+"WKGN01","Monument Way","Redstream","[""RA""]","SOUTH","Normal","MONUMENT WAY EAST
+WOKING
+SURREY
+GU21 5LG","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WKGN01.pdf?CT=1607510123711&OR=ItemsView","https://www.google.com/maps/place/51%C2%B019'42.5%22N+0%C2%B032'25.8%22W/@51.3284008,-0.5407078,187m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.3284778!4d-0.5405056","Data migrated to GIS","False","Leasehold","N only"
+"DWLTM1","Mount Eagle NTL","Redstream",,"SCOTTISH HIGHLANDS & ISLANDS","Normal","NTL MT EAGLE THUS ONLY ROOM
+DINGWALL
+ROSSHIRE
+IV7 8JA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DWLTM1.pdf?CT=1613730946885&OR=ItemsView","https://www.google.com/maps/place/57°35%2728.8%22N+4°16%2737.0%22W/@57.5910876,-4.2776538,320m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.5913333!4d-4.2769361","Data migrated to GIS","False","Leasehold","N only"
+"EGNTM1","Moycroft Road","Redstream",,"SCOTLAND","Normal","MOYCROFT ROAD
+ELGIN
+MORAY
+IV30 1XE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EGNTM1.pdf?CT=1607509123530&OR=ItemsView","https://www.google.com/maps/place/57°38%2758.7%22N+3°17%2731.6%22W/@57.6495499,-3.2924558,320m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.6496278!4d-3.2921056","Data migrated to GIS","False","Leasehold","N only"
+"STGCD1","Munro Road","Redstream",,"SCOTLAND","Normal","MUNRO ROAD
+STIRLING
+STIRLINGSHIRE
+FK7 7UU","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/STGCD1.pdf?CT=1608048759510&OR=ItemsView","https://www.google.com/maps/place/56%C2%B006'47.1%22N+3%C2%B054'49.1%22W/@56.1127453,-3.9147659,666m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d56.1130694!4d-3.9136278","Data migrated to GIS","False","Leasehold","N only"
+"NECCD1","NEC Coleshill","Redstream",,"MIDLANDS","Normal","COLESHILL HEATH ROAD
+BIRMINGHAM
+WEST MIDLANDS
+B37 7JA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NECCD1.pdf?CT=1607507951609&OR=ItemsView","https://www.google.com/maps/place/52°27%2758.1%22N+1°43%2744.8%22W/@52.4660816,-1.7294279,182m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4661278!4d-1.7291","Data migrated to GIS","False","Leasehold","N only"
+"CSLN13","Nelson Street","Redstream",,"NORTH WEST","Normal","NELSON STREET
+CARLISLE
+CUMBRIA
+CA2 5BJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CSLN13.pdf?CT=1607600148759&OR=ItemsView","https://www.google.com/maps/place/54%C2%B053'19.9%22N+2%C2%B056'42.5%22W/@54.8888591,-2.9456898,166m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d54.8888583!4d-2.945125","Data migrated to GIS","False","Leasehold","N only"
+"NWCNY1","New York Way","Redstream",,"NORTH EAST","Normal","NEW YORK WAY
+NORTH SHIELDS
+NEWCASTLE UPON TYNE
+TYNE AND WEAR
+NE27 0QF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NWCNY1.pdf?CT=1607600976633&OR=ItemsView","https://www.google.com/maps/place/55°01%2715.8%22N+1°29%2734.7%22W/@55.0211056,-1.4938672,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.0210417!4d-1.4929806","Data migrated to GIS","False","Leasehold","N only"
+"PNRTN1","Newtongate S/S","Redstream",,"NORTH WEST","Normal","NEWTONGATE
+PENRITH
+CUMBRIA
+CA11 0AB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PNRTN1.pdf?CT=1607601427725&OR=ItemsView","https://www.google.com/maps/place/54%C2%B039'55.2%22N+2%C2%B046'31.5%22W/@54.6650271,-2.7759066,346m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.6653278!4d-2.7754167","Data migrated to GIS","False","Leasehold","N only"
+"NWCN05","Noble Street","Redstream","[""RA"",""OpX""]","NORTH EAST","Normal","NOBLE STREET
+NEWCASTLE UPON TYNE
+TYNE & WEAR
+NE4 7PD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NWCN05.pdf?CT=1607601865810&OR=ItemsView","https://www.google.com/maps/place/54°57%2751.8%22N+1°38%2742.3%22W/@54.9642957,-1.6458302,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.9643889!4d-1.6450944","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"FKE","North Close","Redstream",,"SOUTH EAST","Normal","NORTH CLOSE
+FOLKESTONE
+KENT
+CT20 3UH","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/FKE.pdf?CT=1607602356862&OR=ItemsView","https://www.google.com/maps/place/51%C2%B004'50.5%22N+1%C2%B008'20.8%22E/@51.0807337,1.1385486,375m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.0806917!4d1.1391167","Data migrated to GIS","False","Leasehold","N only"
+"AYRN01","North Harbour","Redstream",,"SCOTLAND","Normal","UNIT 19/20 BLOCK 6
+AYR
+AYRSHIRE
+KA8 8BN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/AYRN01.pdf?CT=1607622029888&OR=ItemsView","https://www.google.com/maps/place/55°28%2700.9%22N+4°37%2754.6%22W/@55.4669995,-4.6321026,169m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.4669111!4d-4.6318194","Data migrated to GIS","False","Leasehold","N only"
+"GLWTW1","North Wallace St","Redstream",,"SCOTLAND","Normal","NORTH WALLACE ST / COUPER ST
+GLASGOW
+LANARKSHIRE
+G4 0DL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GLWTW1.pdf?CT=1607618200107&OR=ItemsView","https://www.google.com/maps/place/55°52%2704.7%22N+4°14%2742.3%22W/@55.8677303,-4.2457829,335m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.867975!4d-4.245075","Data Migrated to GIS","False","Leasehold","N only"
+"PTMN03","Northern Road","Redstream","[""RA""]","SOUTH","Normal","NORTHERN ROAD
+PORTSMOUTH
+HAMPSHIRE
+PO6 3AH","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PTMN03.pdf?CT=1607618880234&OR=ItemsView","https://www.google.com/maps/place/50°50%2739.3%22N+1°04%2710.6%22W/@50.8441455,-1.0695283,189m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.8442444!4d-1.0696028","Data migrated to GIS","False","Leasehold","N only"
+"GLWTO1","Oakbank Ind. Estate","Redstream","[""RA""]","SCOTLAND","Normal","GARSCUBE ROAD
+GLASGOW
+LANARKSHIRE
+G20 7LU","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GLWTO1.pdf?CT=1607619338440&OR=ItemsView","https://www.google.com/maps/place/55°52%2735.4%22N+4°15%2745.7%22W/@55.8763313,-4.2635225,335m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.8764944!4d-4.2626972","Data migrated to GIS","False","Leasehold","N only"
+"CDFN02","Ocean Way","Redstream",,"WALES","Normal","OCEAN WAY
+CARDIFF
+
+CF24 5HF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CDFN02.pdf?CT=1607619725724&OR=ItemsView","https://www.google.com/maps/place/51%C2%B028'33.3%22N+3%C2%B009'34.2%22W/@51.4759284,-3.1603,372m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4759111!4d-3.1595083","Data migrated to GIS","False","Leasehold","N only"
+"DLD","Old Loans Road","Redstream",,"SCOTLAND","Normal","OLD LOANS ROAD
+KILMARNOCK
+AYRSHIRE
+KA2 9DD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DLD.pdf?CT=1607596577288&OR=ItemsView","https://www.google.com/maps/place/55%C2%B033'31.4%22N+4%C2%B036'04.8%22W/@55.5586257,-4.6016779,338m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.5587333!4d-4.6013389","Data migrated to GIS","False","Leasehold","N only"
+"HLWN02","Old London Road","Redstream",,"ANGLIA","Normal","OLD LONDON ROAD
+HARLOW
+ESSEX
+CM17 9HN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/HLWN02.pdf?CT=1607597719439&OR=ItemsView","https://www.google.com/maps/place/51°45%2759.6%22N+0°07%2745.2%22E/@51.7665856,0.1288456,185m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.7665556!4d0.1292139","Data migrated to GIS","False","Freehold","N only"
+"WHHN03","Old Whitehill Quarry","Redstream",,"THAMES VALLEY","Normal","OLD WHITEHILL QUARRY
+KIDLINGTON
+OXFORDSHIRE
+OX5 3AU","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WHHN03.pdf?CT=1607598237924&OR=ItemsView","https://www.google.co.uk/maps/place/51°51%2752.2%22N+1°18%2723.4%22W/@51.8643487,-1.3076294,480m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.8645111!4d-1.3065028?hl=en","Data migrated to GIS","False","Leasehold","N only"
+"SBHN01","Olympian Trading Estate","Redstream",,"NORTH EAST","Normal","OLYMPIAN TRADING ESTATE
+SCARBOROUGH
+NORTH YORKSHIRE
+YO11 3BT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SBHN01.pdf?CT=1607598829595&OR=ItemsView","https://www.google.co.uk/maps/place/54°14%2708.5%22N+0°24%2702.5%22W/@54.2356837,-0.4028829,713m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d54.2356806!4d-0.4006889?hl=en","Data migrated to GIS","False","Leasehold","N only"
+"RDG","Oxford Road","Redstream",,"THAMES VALLEY","Normal","OXFORD ROAD
+READING
+BERKSHIRE
+RG30 6EX","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/RDG.pdf?CT=1607599378006&OR=ItemsView","https://www.google.co.uk/maps/place/51%C2%B028'11.7%22N+1%C2%B001'36.5%22W/@51.4698379,-1.0271889,244m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4699194!4d-1.0267944?hl=en","Data migrated to GIS","False","Leasehold","N only"
+"OHB","Oxwich Bay","Redstream",,"WALES","Normal","HOME FARM
+SWANSEA
+WEST GLAMORGAN
+SA3 1LA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/OHB.pdf?CT=1607599879210&OR=ItemsView","https://www.google.co.uk/maps/place/51°34%2745.6%22N+4°10%2730.7%22W/@51.5790306,-4.1754521,473m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5793222!4d-4.1751972?hl=en","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"PRLN02","Park Royal DC","Redstream",,"LONDON","Normal","CORONATION ROAD
+LONDON
+MIDDLESEX
+NW10 7PH","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PRLN02.pdf?CT=1607606359670&OR=ItemsView","https://www.google.co.uk/maps/place/51°31%2744.9%22N+0°16%2726.8%22W/@51.5290147,-0.2746415,384m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5291472!4d-0.2741056?hl=en","Data migrated to GIS","False","Leasehold","N only"
+"FRNN03","Penhale Road","Redstream","[""Amitie""]","SOUTH WEST","Normal","NEW ROAD
+(Previously - PENHALE ROAD)
+ST.COLUMB
+CORNWALL
+TR9 6NA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/FRNN03.pdf?CT=1607600791947&OR=ItemsView","https://www.google.co.uk/maps/place/50%C2%B022'39.3%22N+4%C2%B056'42.8%22W/@50.3775157,-4.9458232,229m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.377575!4d-4.9452139?hl=en","Data migrated to GIS","False","Freehold","N+N (Full A&B)"
+"WADN01","Peterwood Way Waddon","Redstream",,"LONDON","Planned Closure","UNIT7 INDUSTRIAL PARK
+CROYDON
+SURREY
+CR0 4UQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WADN01.pdf?CT=1607689318037&OR=ItemsView","https://www.google.co.uk/maps/place/51°22%2732.6%22N+0°07%2723.0%22W/@51.3760475,-0.1237192,306m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.3757111!4d-0.1230444?hl=en","Data migrated to GIS","False","Leasehold","N only"
+"PCOTN1","Porthcurno Landing Station","Redstream",,"SOUTH WEST","Normal","POLGIGGA
+PENZANCE
+CORNWALL
+TR19 6LR","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PCOTN1.pdf?CT=1607620604937&OR=ItemsView","https://www.google.co.uk/maps/place/50°03%2721.3%22N+5°39%2747.3%22W/@50.0557924,-5.6635564,251m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.0559194!4d-5.6631333?hl=en","Data migrated to GIS","False","Freehold","N only"
+"PTMDN1","Portsdown Hill Road","Redstream",,"SOUTH","Normal","PORTSDOWN HILL ROAD
+PORTSMOUTH
+HAMPSHIRE
+PO6 1BE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PTMDN1.pdf?CT=1607621549492&OR=ItemsView","https://www.google.com/maps/place/50°51%2713.7%22N+1°03%2721.6%22W/@50.8535671,-1.0563135,348m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.8537917!4d-1.0560028","Data migrated to GIS","False","Leasehold","N only"
+"BTRTP1","Prospect Court","Redstream",,"SCOTLAND","Normal","PROSPECT COURT
+GLASGOW
+LANARKSHIRE
+G72 0JA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTRTP1.pdf?CT=1607942581000&OR=ItemsView","https://www.google.com/maps/place/55°46%2750.2%22N+4°05%2738.4%22W/@55.7804763,-4.0943857,265m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.7806222!4d-4.0940111","Data migrated to GIS","False","Leasehold","N only"
+"NGM","Queens Drive","Redstream",,"MIDLANDS","Normal","OFF QUEENS DRIVE
+NOTTINGHAM
+NOTTINGHAMSHIRE
+NG2 1AL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NGM.pdf?CT=1607932073735&OR=ItemsView","https://www.google.com/maps/place/52%C2%B056'37.6%22N+1%C2%B009'38.7%22W/@52.943781,-1.1629387,665m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d52.9437778!4d-1.16075","Data migrated to GIS","False","Leasehold","N only"
+"COV","Quinton Road","Redstream","[""OpX""]","MIDLANDS","Normal","OFF QUINTON ROAD
+COVENTRY
+
+CV1 2NJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/COV.pdf?CT=1607932522643&OR=ItemsView","https://www.google.com/maps/place/52°23%2759.3%22N+1°30%2733.1%22W/@52.3997895,-1.51018,337m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.3997972!4d-1.5091806","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"ASMN02","Raans Road","Redstream",,"THAMES VALLEY","Normal","RAANS ROAD
+AMERSHAM
+BUCKINGHAMSHIRE
+HP6 6JY","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ASMN02.pdf?CT=1607932961378&OR=ItemsView","https://www.google.com/maps/place/51%C2%B040'25.4%22N+0%C2%B035'15.7%22W/@51.6735421,-0.5885303,342m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.6737083!4d-0.5876806","Data Migrated to GIS","False","Freehold","N only"
+"RATE02","Ratcliffe S/S EAM","Redstream",,"MIDLANDS","Normal","A453
+RATCLIFFE ON SOAR
+NOTTINGHAMSHIRE
+NG11 0EE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/RATE02.pdf?CT=1607933334918&OR=ItemsView","https://www.google.com/maps/place/52°51%2745.9%22N+1°15%2710.5%22W/@52.8625134,-1.2544459,666m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.86275!4d-1.2529278","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"SWY","Rea Valley Business Park","Redstream",,"MIDLANDS","Normal","REA VALLEY BUSINESS PARK
+SHREWSBURY
+SHROPSHIRE
+SY3 7ET","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SWY.pdf?CT=1607933672003&OR=ItemsView","https://www.google.com/maps/place/52°42%2706.5%22N+2°44%2732.4%22W/@52.7017129,-2.7430388,334m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.7017972!4d-2.7423361","Data migrated to GIS","False","Freehold","N only"
+"CFDTN1","Regina Road","Redstream",,"ANGLIA","Normal","REGINA ROAD
+CHELMSFORD
+ESSEX
+CM1 1PE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CFDTN1.pdf?CT=1607934075380&OR=ItemsView","https://www.google.com/maps/place/51%C2%B044'17.4%22N+0%C2%B028'40.6%22E/@51.7379125,0.4771842,342m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.7381583!4d0.4779333","Data migrated to GIS","False","Leasehold","N only"
+"DGS","Richmond Hill","Redstream",,"NORTH WEST","Normal","RICHMOND HILL
+DOUGLAS
+ISLE OF MAN
+IOM XXX","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/DGS.pdf?CT=1607934511750&OR=ItemsView","https://www.google.com/maps/place/54°08%2734.2%22N+4°33%2706.9%22W/@54.1429011,-4.5527201,323m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.1428194!4d-4.5519167","Data migrated to GIS","False","Leasehold","N only"
+"ANSTW1","River Wynd","Redstream",,"SCOTTISH HIGHLANDS & ISLANDS","Normal","RIVER WYND
+ALNESS
+ROSS-SHIRE
+IV17 0PE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ANSTW1.pdf?CT=1607602229966&OR=ItemsView","https://www.google.com/maps/place/57°41%2736.2%22N+4°15%2741.0%22W/@57.6932539,-4.2619702,295m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.6933889!4d-4.2613861","Data migrated to GIS","False","Leasehold","N only"
+"WCKTR1","Riverside Road","Redstream",,"SCOTTISH HIGHLANDS & ISLANDS","Normal","RIVERSIDE ROAD (OFF THURSO RD)
+WICK
+WICK
+KW1 5LR","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WCKTR1.pdf?CT=1607603191642&OR=ItemsView","https://www.google.com/maps/place/58°26%2731.0%22N+3°06%2717.0%22W/@58.4417815,-3.1053292,289m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d58.4419556!4d-3.1047194","Data migrated to GIS","False","Leasehold","N only"
+"BIFTS1","Salthouse Road","Redstream",,"NORTH WEST","Closed","SALTHOUSE ROAD
+BARROW IN FURNESS
+CUMBRIA
+LA14 2UP","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BIFTS1.pdf?csf=1&web=1&e=REFu2h","https://www.google.com/maps/place/54%C2%B006'29.9%22N+3%C2%B012'46.4%22W/@54.1082941,-3.2130625,323m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.1083167!4d-3.2128833","Data migrated to GIS","False","Leasehold","N only"
+"CTRTS1","Sealand Trading Estate","Redstream","[""RA""]","NORTH WEST","Normal","HARTFORD WAY
+CHESTER
+CHESHIRE
+CH1 4LT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CTRTS1.pdf?CT=1607604108169&OR=ItemsView","https://www.google.com/maps/place/53°11%2730.7%22N+2°54%2753.9%22W/@53.1918155,-2.9156187,331m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.1918556!4d-2.9149778","Data migrated to GIS","False","Leasehold","N only"
+"CHDCD1","Sheffield Road","Redstream",,"NORTH EAST","Normal","SHEFFIELD ROAD
+CHESTERFIELD
+DERBYSHIRE
+S41 7LT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CHDCD1.pdf?CT=1607604587481&OR=ItemsView","https://www.google.com/maps/place/53%C2%B014'39.8%22N+1%C2%B025'32.9%22W/@53.2442221,-1.4260892,330m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.2443778!4d-1.4258056","Data migrated to GIS","False","Leasehold","N only"
+"SLO","Simpsons Way","Redstream",,"THAMES VALLEY","Normal","SIMPSONS WAY
+SLOUGH
+BERKSHIRE
+SL1 3GD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SLO.pdf?CT=1607605183483&OR=ItemsView","https://www.google.com/maps/place/51°30%2751.4%22N+0°36%2706.4%22W/@51.5139095,-0.6023432,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5142889!4d-0.601775","Data migrated to GIS","False","Leasehold","N only"
+"SMHN02","Smale House","Redstream",,"LONDON","Normal","GREAT SUFFOLK ST.
+LONDON
+LONDON
+SE1 0BE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SMHN02.pdf?CT=1607605861123&OR=ItemsView","https://www.google.com/maps/place/51°30%2703.9%22N+0°05%2759.2%22W/@51.5011883,-0.1002787,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5010694!4d-0.0997694","Data migrated to GIS","False","Leasehold","N only"
+"LPLTB1","South Boundry Road","Redstream",,"NORTH WEST","Normal","SOUTH BOUNDARY ROAD
+LIVERPOOL
+MERSEYSIDE
+L33 7SF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LPLTB1.pdf?CT=1607690254328&OR=ItemsView","https://www.google.com/maps/place/53%C2%B028'27.1%22N+2%C2%B051'38.1%22W/@53.4741463,-2.8609592,328m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.4741861!4d-2.8605917","Data migrated to GIS","False","Leasehold","N only"
+"BRN","South Road","Redstream",,"SOUTH WEST","CLOSED","SOUTH ROAD
+BURNHAM ON SEA
+SOMERSET
+TA8 2RD","False","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BRN.pdf?CT=1607692343814&OR=ItemsView","https://www.google.com/maps/place/51%C2%B017'09.7%22N+3%C2%B000'47.2%22W/@51.2860062,-3.0134064,173m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.2860222!4d-3.0131139",,"False","Leasehold","N only"
+"RDGCD2","Southern Court","Redstream","[""Amitie""]","THAMES VALLEY","Normal","SOUTHERN COURT
+READING
+BERKSHIRE
+RG1 4QS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/RDGCD2.pdf?CT=1607934955252&OR=ItemsView","https://www.google.com/maps/place/51°27%2708.3%22N+0°57%2754.0%22W/@51.4523845,-0.9655341,344m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4522944!4d-0.9649861","Data migrated to GIS","False","Freehold","N only"
+"LDSTS1","Spectrum Park","Redstream","[""RA""]","NORTH EAST","Normal","GRAPE STREET
+LEEDS
+WEST YORKSHIRE
+LS10 1BX","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LDSTS1.pdf?CT=1607936353349&OR=ItemsView","https://www.google.com/maps/place/53°47%2706.5%22N+1°31%2759.0%22W/@53.7850426,-1.5338933,326m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7851278!4d-1.5330667","Data migrated to GIS","False","Leasehold","N only"
+"BPL","Squires Gate Lane","Redstream",,"NORTH WEST","Normal","SQUIRES GATE LANE
+BLACKPOOL
+LANCASHIRE
+FY4 2QS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BPL.pdf?CT=1607936812980&OR=ItemsView","https://www.google.com/maps/place/53%C2%B046'47.2%22N+3%C2%B002'12.6%22W/@53.7798115,-3.0370924,163m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7797778!4d-3.0368361","Data migrated to GIS","False","Leasehold","N only"
+"BMTDN1","St. Catherines Hill Lane","Redstream",,"SOUTH","Normal","ST. CATHERINES HILL LANE
+CHRISTCHURCH
+DORSET
+BH23 2NL","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BMTDN1.pdf?CT=1607944009439&OR=ItemsView","https://www.google.com/maps/place/50°45%2735.1%22N+1°47%2756.5%22W/@50.7592002,-1.7990277,349m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.7597528!4d-1.799025","Data migrated to GIS","False","Leasehold","N only"
+"PLY","St. Modwen Road","Redstream","[""RA"",""Amitie""]","SOUTH WEST","Normal","ST. MODWEN ROAD
+PLYMOUTH
+DEVON
+PL6 8LH","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/PLY.pdf?CT=1607943520498&OR=ItemsView","https://www.google.com/maps/place/50°23%2745.1%22N+4°05%2724.5%22W/@50.3958058,-4.0909853,352m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d50.3958583!4d-4.0901278","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BRRTS1","Stafford Terrace EAM","Redstream",,"SCOTTISH HIGHLANDS & ISLANDS","Normal","STAFFORD TERRACE
+BRORA
+SUTHERLAND
+KW9 6QW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BRRTS1.pdf?CT=1607944352570&OR=ItemsView","https://www.google.com/maps/place/58°00%2750.9%22N+3°51%2718.6%22W/@58.0141483,-3.8555105,146m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d58.014125!4d-3.8551639","Data migrated to GIS","False","Leasehold","N only"
+"HHD","Station Car Park","Redstream",,"NORTHERN HOME COUNTIES","Normal","STATION CAR PARK - EAST END
+HEMEL HEMPSTEAD
+HERTFORDSHIRE
+HP3 9BJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/HHD.pdf?CT=1607944776087&OR=ItemsView","https://www.google.com/maps/place/51%C2%B044'29.5%22N+0%C2%B029'08.9%22W/@51.7416228,-0.4866348,342m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.7415333!4d-0.4858083","Data migrated to GIS","False","Leasehold","N only"
+"SDN","Station Road","Redstream",,"SOUTH WEST","Normal","STATION ROAD
+SWINDON
+WILTSHIRE
+SN1 2BB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SDN.pdf?CT=1607945154465&OR=ItemsView","https://www.google.com/maps/place/51°34%2703.9%22N+1°46%2740.2%22W/@51.5676603,-1.7781667,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.56775!4d-1.777825","Data migrated to GIS","False","Leasehold","N only"
+"BTNW01","Station Road EAM","Redstream",,"MIDLANDS","Normal","STATION ROAD
+BARTON UNDER NEEDWOOD
+STAFFORDSHIRE
+DE13 8DP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTNW01.pdf?CT=1607945692500&OR=ItemsView","https://www.google.com/maps/place/52°45%2751.1%22N+1°42%2744.5%22W/@52.7640297,-1.7126928,167m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.7642028!4d-1.7123694","Data migrated to GIS","False","Leasehold","N only"
+"HLDA11","Stockley Road DC","Redstream",,"LONDON","Normal","STOCKLEY ROAD
+WEST DRAYTON
+MIDDLESEX
+UB7 9FN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/HLDA11.pdf?CT=1607946354968&OR=ItemsView","https://www.google.com/maps/place/51%C2%B030'09.8%22N+0%C2%B026'46.9%22W/@51.5028018,-0.4475512,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5027222!4d-0.4463722","Data migrated to GIS","False","Leasehold","N only"
+"HLDA12","Stockley Road DC","Redstream",,"LONDON","Normal","STOCKLEY ROAD
+WEST DRAYTON
+MIDDLESEX
+UB7 9FN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/HLDA12.pdf?CT=1607963287258&OR=ItemsView","https://www.google.com/maps/place/51°30%2709.8%22N+0°26%2746.9%22W/@51.5028018,-0.4475512,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5027222!4d-0.4463722","Data migrated to GIS","False","Leasehold","N only"
+"SOT","Stoke on Trent Railway Station","Redstream",,"MIDLANDS","Normal","STOKE ROAD/ OFF STOKE ROAD (A5006)
+STOKE ON TRENT
+STAFFORDSHIRE
+ST4 2QH","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SOT.pdf?CT=1607693093188&OR=ItemsView","https://www.google.com/maps/place/53°00%2741.4%22N+2°11%2709.9%22W/@53.0109542,-2.1867096,664m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.0114972!4d-2.1860889","Data migrated to GIS","False","Leasehold","N only"
+"BRETS1","Strathcaro EAM","Redstream",,"SCOTLAND","Normal","STRATHCARO EAM
+BRECHIN
+ANGUS
+DD9 7QB","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BRETS1.pdf?CT=1607693366813&OR=ItemsView","https://www.google.com/maps/place/56°45%2755.9%22N+2°37%2741.6%22W/@56.7655447,-2.6294283,302m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d56.7655333!4d-2.6282278","Data migrated to GIS","False","Leasehold","N only"
+"CYNTN2","Swan Close","Redstream",,"LONDON","Normal","SWAN CLOSE
+CROYDON
+SURREY
+CR0 2DZ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CYNTN2.pdf?CT=1607964554419&OR=ItemsView","https://www.google.com/maps/place/51°23%2705.4%22N+0°05%2720.5%22W/@51.3847962,-0.0892037,344m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.3848444!4d-0.0890167","Data migrated to GIS","False","Freehold","N only"
+"SDNN13","Swindon","Redstream",,"SOUTH WEST","Normal","WHITEHILL WAY, 
+WINDMILL HILL BUSINESS PARK, 
+SWINDON, 
+WILTSHIRE, 
+SN5 6LA, UK","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SDNN13.pdf","https://www.google.com/maps/place/Swindon+SN5+6LA/@51.5514763,-1.8477774,320m/data=!3m1!1e3!4m5!3m4!1s0x487143a316b068f7:0x41ab032eb5a070fb!8m2!3d51.5514452!4d-1.8473","Data migrated to GIS","False","Leasehold","N only"
+"SDNN11","Swindon","Redstream",,"SOUTH WEST","Normal","WHITEHILL WAY, 
+WINDMILL HILL BUSINESS PARK, 
+SWINDON, 
+WILTSHIRE, 
+SN5 6LA, UK","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SDNN11.pdf?csf=1&web=1&e=FWt32z","https://www.google.com/maps/place/Swindon+SN5+6LA/@51.5514763,-1.8477774,320m/data=!3m1!1e3!4m5!3m4!1s0x487143a316b068f7:0x41ab032eb5a070fb!8m2!3d51.5514452!4d-1.8473","Data migrated to GIS","False","Leasehold","N only"
+"BCT","Tamebridge Railway Station","Redstream",,"MIDLANDS","Normal","TAMEBRIDGE RAILWAY STATION
+WEDNESBURY
+WEST MIDLANDS
+WS10 0LD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BCT.pdf?CT=1607694228605&OR=ItemsView","https://www.google.com/maps/place/52%C2%B033'22.8%22N+1%C2%B058'42.3%22W/@52.5561254,-1.9785262,335m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.5563417!4d-1.9784167","Data migrated to GIS","False","Leasehold","N only"
+"TELHS1","Telehouse Coriander Avenue","Redstream",,"LONDON","Normal","CORIANDER AVENUE
+LONDON
+MIDDLESEX
+E14 2AA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/TELHS1.pdf?CT=1607694643373&OR=ItemsView","https://www.google.com/maps/place/51°30%2743.4%22N+0°00%2707.4%22W/@51.5120826,-0.0032027,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5120472!4d-0.0020667","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"TELHS2","Telehouse Coriander Avenue","Redstream",,"LONDON","Normal","CORIANDER AVENUE
+LONDON
+MIDDLESEX
+E14 2AA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/TELHS2.pdf?CT=1607695096729&OR=ItemsView","https://www.google.com/maps/place/51°30%2741.3%22N+0°00%2706.6%22W/@51.5114711,-0.0029193,343m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d51.5114694!4d-0.001825","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"NBYCD1","The Paddocks","Redstream",,"THAMES VALLEY","Normal","THE PADDOCKS
+NEWBURY
+BERKSHIRE
+RG14 5TQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NBYCD1.pdf?CT=1607695420022&OR=ItemsView","https://www.google.com/maps/place/51°23%2756.2%22N+1°18%2719.0%22W/@51.3989477,-1.3074554,688m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d51.3989444!4d-1.3052667","Data migrated to GIS","False","Leasehold","N only"
+"EDBCD1","Torphichen Street","Redstream",,"SCOTLAND","Normal","TORPHICHEN STREET
+EDINBURGH
+MIDLOTHIAN
+EH3 8JQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EDBN07%20and%20EDBCD1.pdf?CT=1607696702001&OR=ItemsView","https://www.google.com/maps/place/55°56%2748.6%22N+3°12%2752.3%22W/@55.9466484,-3.2153172,309m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.9468361!4d-3.2145139","Data migrated to GIS","False","Leasehold","N only"
+"EDBN07","Torphichen Street","Redstream",,"SCOTLAND","Normal","TORPHICHEN STREET
+EDINBURGH
+MIDLOTHIAN
+EH3 8JQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EDBN07%20and%20EDBCD1.pdf?CT=1607696702001&OR=ItemsView","https://www.google.com/maps/place/55°56%2748.6%22N+3°12%2752.3%22W/@55.9466484,-3.2153172,309m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.9468361!4d-3.2145139","Data migrated to GIS","False","Leasehold","N only"
+"NWPDN1","Upper Dock Street","Redstream",,"WALES","Normal","UPPER DOCK STREET
+NEWPORT
+GWENT
+NP20 1DW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/NWPDN1.pdf?CT=1608027037327&OR=ItemsView","https://www.google.com/maps/place/51°35%2713.9%22N+2°59%2743.4%22W/@51.5871698,-2.9959853,343m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.5871889!4d-2.9953806","Data migrated to GIS","False","Leasehold","N only"
+"BFTN03","Upper Newtownards Road","Redstream","[""RA""]","NORTHERN IRELAND","Normal","UPPER NEWTOWNARDS ROAD
+BELFAST
+COUNTY ANTRIM
+BT16 1UD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BFTN03.pdf?CT=1608027507804&OR=ItemsView","https://www.google.com/maps/place/54°35%2740.0%22N+5°46%2744.3%22W/@54.5944471,-5.7796702,320m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d54.59445!4d-5.7789778","Data migrated to GIS","False","Leasehold","N only"
+"VHXN02 & VHXINT","Vauxhall Cross","Redstream","[""RA""]","LONDON","Normal","MILES STREET
+LONDON
+LONDON
+SW8 1SD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/VHXINT%26VHXN02.pdf?CT=1608028519519&OR=ItemsView","https://www.google.com/maps/place/51°28%2759.0%22N+0°07%2737.3%22W/@51.482875,-0.1268578,344m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4830583!4d-0.1270278","Data migrated to GIS","False","Leasehold","N only"
+"BSG","Vyne Road","Redstream",,"THAMES VALLEY","Normal","VYNE ROAD
+BASINGSTOKE
+HAMPSHIRE
+RG21 5ND","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BSG.pdf?CT=1608028870108&OR=ItemsView","https://www.google.com/maps/place/51°16%2707.3%22N+1°05%2720.1%22W/@51.2685895,-1.0895293,345m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.2687056!4d-1.0889194","Data migrated to GIS","False","Leasehold","N only"
+"BKLTN1","Waterside House","Redstream",,"THAMES VALLEY","Planned Closure","LONGSHOT LANE
+BRACKNELL
+BERKSHIRE
+RG12 1WB","False","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BKLTN1.pdf?CT=1608029657508&OR=ItemsView","https://www.google.com/maps/place/51%C2%B024'59.8%22N+0%C2%B046'21.4%22W/@51.4165438,-0.7729863,344m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4166!4d-0.7726111",,"True","Leasehold","N only"
+"WAHP03","WATFORD","Redstream",,"London","Normal","RYAN WAY
+WATFORD
+HERTFORDSHIRE
+WD24 4YP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WAHP03.pdf","https://www.google.com/maps/place/51°40%2705.4%22N+0°23%2723.5%22W/@51.6681568,-0.3904096,321m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.6681667!4d-0.3898611","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"ABN","Wellington Circle","Redstream",,"SCOTLAND","Normal","WELLINGTON CIRCLE
+ABERDEEN
+ABERDEENSHIRE
+AB12 3JG","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/ABN.pdf?CT=1608029972418&OR=ItemsView","https://www.google.com/maps/place/57°06%2731.5%22N+2°05%2741.0%22W/@57.1085484,-2.0948627,300m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d57.1087444!4d-2.0947222","Data migrated to GIS","False","Freehold","N only"
+"LCT (Ground Floor)","Wharf Street South","Redstream",,"MIDLANDS","Normal","WHARF ST. SOUTH
+LEICESTER
+LEICESTERSHIRE
+LE1 2AA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LCT%20GROUNDFLOOR.pdf?CT=1614251301456&OR=ItemsView","https://www.google.com/maps/place/52°38%2713.7%22N+1°07%2736.3%22W/@52.6371084,-1.1275435,335m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.6371333!4d-1.1267583","Data migrated to GIS","False","Leasehold","N only"
+"LCT EXT (1st Floor)","Wharf Street South","Redstream","[""RA""]","MIDLANDS","Normal","WHARF ST. SOUTH
+LEICESTER
+LEICESTERSHIRE
+LE1 2AA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LCT%20EXT%20(1st%20Floor).pdf","https://www.google.com/maps/place/52°38%2713.7%22N+1°07%2736.3%22W/@52.6371084,-1.1275435,335m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.6371333!4d-1.1267583","Data migrated to GIS","False","Leasehold","N only"
+"KLNN01","Willows Business Park","Redstream",,"ANGLIA","Normal","WILLOWS ROAD
+KINGS LYNN
+NORFOLK
+PE34 3RD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/KLNN01.pdf?CT=1608030740160&OR=ItemsView","https://www.google.com/maps/place/52°43%2738.2%22N+0°22%2748.2%22E/@52.7270402,0.3784679,668m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.7272806!4d0.3800583","Data migrated to GIS","False","Leasehold","N only"
+"LTNDN1","Wolston Close","Redstream",,"NORTHERN HOME COUNTIES","Normal","NEXT TO 55 WOLSTON CLOSE
+LUTON
+BEDFORDSHIRE
+LU1 5SS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LTNDN1.pdf?CT=1607964858729&OR=ItemsView","https://www.google.com/maps/place/51°52%2739.8%22N+0°25%2752.1%22W/@51.8776519,-0.4313643,170m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.8777139!4d-0.4311389","Data migrated to GIS","False","Leasehold","N only"
+"MKSTN1","Wolverton Railway Station","Redstream",,"NORTHERN HOME COUNTIES","Normal","STRATFORD ROAD
+MILTON KEYNES
+BUCKINGHAMSHIRE
+MK12 5LJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MKSTN1.pdf?CT=1607965787997&OR=ItemsView","https://www.google.com/maps/place/52°03%2757.4%22N+0°48%2715.6%22W/@52.0658756,-0.8049873,339m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.0659389!4d-0.8043361","Data migrated to GIS","False","Leasehold","N only"
+"IODTA1","London - Anchorage House","Redstream.","[""OpX""]","LONDON","Normal","2 ANCHORAGE HOUSE
+CLOVE CRESCENT
+TOWER HAMLETS
+LONDON
+E14 2BE","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/IODTA1.pdf","https://www.google.com/maps/place/Anchorage+House/@51.5103875,-0.0071647,368m/data=!3m2!1e3!4b1!4m5!3m4!1s0x48760384d4f25683:0x5aa841624d0314d6!8m2!3d51.5103842!4d-0.0049707","Data migrated to GIS","False","Leasehold","N only"
+"BDFN02 & BDFTN1","Bedford - Manton Lane","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","Northern Home Counties","Normal","MANTON LANE
+BEDFORD
+BEDFORDSHIRE
+MK41 7PX","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BDFN02%20%26%20BDFTN1.pdf","https://www.google.com/maps/place/Manton+Centre,+Manton+Ln,+Bedford+MK41+7PX/@52.1506924,-0.478183,316m/data=!3m1!1e3!4m5!3m4!1s0x4877b72bcb0d27ed:0x44a3ff31dd648db!8m2!3d52.1506233!4d-0.477655","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BHMN05","Birmingham - Holliday Street","Redstream_PABR",,"Midlands","Normal","HOLLIDAY ST
+BIRMINGHAM
+WEST MIDLANDS
+B1 1TQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BHMN05.pdf?CT=1607951208852&OR=ItemsView","https://www.google.com/maps/place/52°28%2734.7%22N+1°54%2720.3%22W/@52.4763056,-1.9056389,313m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4763056!4d-1.9056389","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BHMN08","Birmingham - Holliday Street","Redstream_PABR","[""PX"",""RA"",""OpX""]","Midlands","Normal","HOLLIDAY ST
+BIRMINGHAM
+WEST MIDLANDS
+B1 1TQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BHMN08.pdf","https://www.google.com/maps/place/52°28%2734.7%22N+1°54%2720.3%22W/@52.4763056,-1.9056389,313m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4763056!4d-1.9056389","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BHMN07","Birmingham - Holliday Street","Redstream_PABR","[""PABR""]","Midlands","Normal","HOLLIDAY ST
+BIRMINGHAM
+WEST MIDLANDS
+B1 1TQ","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BHMN07.pdf?csf=1&web=1&e=CGMpRJ","https://www.google.com/maps/place/52°28%2734.7%22N+1°54%2720.3%22W/@52.4763056,-1.9056389,313m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4763056!4d-1.9056389","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BSHN03","Birmingham - Smallheath","Redstream_PABR",,"Midlands","Normal","TALBOT WAY
+BIRMINGHAM
+WEST MIDLANDS
+B10 0HJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BSHN03.pdf?CT=1607951775823&OR=ItemsView","https://www.google.com/maps/place/52°27%2752.6%22N+1°50%2738.8%22W/@52.464612,-1.8447015,315m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4646111!4d-1.8441111","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BSHN08","Birmingham - Smallheath","Redstream_PABR","[""PX"",""RA"",""OpX""]","Midlands","Normal","TALBOT WAY
+BIRMINGHAM
+WEST MIDLANDS
+B10 0HJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BSHN08.pdf","https://www.google.com/maps/place/52°27%2752.6%22N+1°50%2738.8%22W/@52.464612,-1.8447015,315m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4646111!4d-1.8441111","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BSHN07","Birmingham - Smallheath","Redstream_PABR","[""PABR""]","Midlands","Normal","TALBOT WAY
+BIRMINGHAM
+WEST MIDLANDS
+B10 0HJ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BSHN07.pdf","https://www.google.com/maps/place/52°27%2752.6%22N+1°50%2738.8%22W/@52.464612,-1.8447015,315m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d52.4646111!4d-1.8441111","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BKLN05","Bracknell - Sterling Centre Unit 6","Redstream_PABR","[""PABR""]","Thames Valley","Normal","STERLING CENTRE
+BRACKNELL
+BERKSHIRE
+RG12 2PW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BKLN05.pdf?CT=1607952059546&OR=ItemsView","https://www.google.com/maps/place/51°24%2746.3%22N+0°44%2716.5%22W/@51.412862,-0.7385274,323m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4128611!4d-0.7379167","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BKLN05 Ext Room","Bracknell - Sterling Centre Unit 6","Redstream_PABR","[""PX"",""RA"",""OpX"",""NFV""]","Thames Valley","Normal","STERLING CENTRE
+BRACKNELL
+BERKSHIRE
+RG12 2PW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BKLN05%20EXT%20ROOM.pdf","https://www.google.com/maps/place/51°24%2746.3%22N+0°44%2716.5%22W/@51.412862,-0.7385274,323m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4128611!4d-0.7379167","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"BTFTB1","Brentford - Syon Gateway","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","Outer London","Normal","SYON GATE WAY
+BRENTFORD
+MIDDLESEX
+TW8 9DD","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTFTB1.pdf?CT=1607952369503&OR=ItemsView","https://www.google.com/maps/place/51°29%2700.5%22N+0°19%2725.1%22W/@51.4834731,-0.3242301,322m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4834722!4d-0.3236389","Data migrated to GIS","False","Leasehold","N only"
+"BTLN08","Bristol - St Thomas Street","Redstream_PABR","[""PABR""]","South West","Normal","ST. THOMAS ST.
+BRISTOL
+AVON
+BS1 6JS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTLN08.pdf?CT=1607952618957&OR=ItemsView","https://www.google.com/maps/place/51°27%2705.0%22N+2°35%2718.1%22W/@51.4513898,-2.5889519,321m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4513889!4d-2.5883611","Data migrated to GIS","False","Freehold","N only"
+"BTLN09","Bristol - St Thomas Street","Redstream_PABR","[""PX"",""RA"",""OpX"",""Amitie""]","South West","Normal","ST. THOMAS ST.
+BRISTOL
+AVON
+BS1 6JS","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTLN09.pdf","https://www.google.com/maps/place/51°27%2705.0%22N+2°35%2718.1%22W/@51.4513898,-2.5889519,321m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4513889!4d-2.5883611","Data migrated to GIS","False","Freehold","N only"
+"BTLCD1","Bristol - St Thomas Street","Redstream_PABR","[""PABR""]","South West","Normal","ST. THOMAS ST.
+BRISTOL
+AVON
+BS1 6JS","True","/:b:/r/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/BTLCD1.pdf?csf=1&web=1&e=MMFIZG","https://www.google.com/maps/place/51°27%2705.0%22N+2°35%2718.1%22W/@51.4513898,-2.5889519,321m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4513889!4d-2.5883611","Data migrated to GIS","False","Freehold","N only"
+"EDBTN1","Edinburgh - Norton Park","Redstream_PABR","[""PABR""]","Scotland","Normal","NORTON PARK
+EDINBURGH
+MIDLOTHIAN
+EH7 5RS","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/EDBTN1.pdf?CT=1607953100321&OR=ItemsView","https://www.google.com/maps/place/55°57%2732.4%22N+3°10%2704.7%22W/@55.9590008,-3.1685619,288m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.959!4d-3.1679722","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"GLWN07","Glasgow - Kelvin Avenue","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","Scotland","Normal","KELVIN AVENUE
+GLASGOW
+LANARKSHIRE
+G52 4LT","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/GLWN07.pdf?CT=1607953467769&OR=ItemsView","https://www.google.com/maps/place/55°51%2745.0%22N+4°22%2705.1%22W/@55.8625078,-4.3686412,290m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d55.8625!4d-4.3680833","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"LDSCD2","Leeds - Milford Place","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","North East","Normal","MILFORD PLACE
+LEEDS
+WEST YORKSHIRE
+LS4 2BQ","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/LDSCD2.pdf?CT=1607953760671&OR=ItemsView","https://www.google.com/maps/place/53°48%2716.4%22N+1°34%2749.2%22W/@53.8045628,-1.5808852,305m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.8045556!4d-1.5803333","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"TGYN03","Leeds - Tingley","Redstream_PABR","[""PABR"",""PX"",""OpX""]","North East","Normal","TOPCLIFFE LANE
+WAKEFIELD
+WEST YORKSHIRE
+WF3 1SN","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/TGY-TGYN02-TGYN03-TGYN04.pdf","https://www.google.com/maps/place/53°44%2706.4%22N+1°34%2756.4%22W/@53.7351123,-1.5831632,305m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.7351111!4d-1.5823333","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"CHTN07","London - Chart Street","Redstream_PABR","[""PABR""]","Inner London","Normal","CHART STREET
+LONDON
+N1 6EF","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/CHTN07.pdf?CT=1607957043309&OR=ItemsView","https://www.google.com/maps/place/51°31%2740.9%22N+0°05%2713.5%22W/@51.5280408,-0.0876382","Data migrated to GIS","False","Leasehold","N only"
+"SQYN02","London - Surrey Quays","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","Inner London","Normal","CROFT ST.
+SURREY QUAYS
+LONDON
+SE8 5DW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SQYN01_SQYN02.pdf?CT=1607957402454&OR=ItemsView","https://www.google.com/maps/place/51°29%2727.2%22N+0°02%2729.0%22W/@51.4908898,-0.0419802,321m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.4908889!4d-0.0413889","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"MCRN12","Manchester - Salford Quays","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","North West","Normal","BROADWAY
+SALFORD
+GREATER MANCHESTER
+M50 2UW","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MCRN12.pdf?CT=1607948526067&OR=ItemsView","https://www.google.com/maps/place/53°28%2730.0%22N+2°18%2705.3%22W/@53.4750012,-2.3023042,307m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.475!4d-2.3014722","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"MCRN11","Manchester - Unit 1 Piccadilly Trading Estate","Redstream_PABR","[""PABR""]","North West","Normal","GREAT ANCOATS STREET 
+PICCADILLY TRADING ESTATE
+MANCHESTER
+M1 2NP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/MCRN11.pdf?CT=1607947469540&OR=ItemsView","https://www.google.com/maps/place/53°28%2742.9%22N+2°13%2718.8%22W/@53.4785788,-2.2224382,306m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d53.4785833!4d-2.2218889","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"
+"SDNN06","Swindon - Swindon Data Centre","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX"",""Amitie""]","South West","Normal","WHITEHILL WAY
+SWINDON
+WILTSHIRE
+SN5 6LA","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/SDNN06.pdf?CT=1608031126742&OR=ItemsView","https://www.google.com/maps/place/Swindon+SN5+6LA/@51.5514763,-1.8477774,320m/data=!3m1!1e3!4m5!3m4!1s0x487143a316b068f7:0x41ab032eb5a070fb!8m2!3d51.5514452!4d-1.8473","Data migrated to GIS","False","Leasehold","N only"
+"WAHP06","Watford - Holly Park Unit A","Redstream_PABR","[""PABR"",""PX"",""RA"",""OpX""]","Outer London","Normal","RYAN WAY
+WATFORD
+HERTFORDSHIRE
+WD24 4YP","True","/sites/InfrastructureDeliveryPublic/Shared%20Documents/General/Floorplans/Network/WAHP06.pdf?CT=1608031564360&OR=ItemsView","https://www.google.com/maps/place/51°40%2705.4%22N+0°23%2723.5%22W/@51.6681568,-0.3904096,321m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d51.6681667!4d-0.3898611","Data migrated to GIS","False","Leasehold","N+N (Full A&B)"

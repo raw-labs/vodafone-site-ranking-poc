@@ -1,0 +1,8 @@
+{
+  "tableName": "mtx_capacity",
+  "sheetName": "Plant loading",
+  "region": "A2:BG118",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

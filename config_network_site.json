@@ -1,0 +1,8 @@
+{
+  "tableName": "sites",
+  "sheetName": "Network Site List Updated 24022",
+  "region": "A1:N229",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

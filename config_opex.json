@@ -1,0 +1,8 @@
+{
+  "tableName": "opex",
+  "sheetName": "Elec",
+  "region": "A1:AK605",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}

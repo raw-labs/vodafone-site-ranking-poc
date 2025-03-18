@@ -1,0 +1,8 @@
+{
+  "tableName": "ownership",
+  "sheetName": "All Network Site data AO",
+  "region": "B4:AG1113",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll"
+}
