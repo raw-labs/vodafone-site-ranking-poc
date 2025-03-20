@@ -83,7 +83,7 @@
 
 WITH 
 /*
-   5. Recursive CTE: fill_imputed
+   1. Recursive CTE: fill_imputed
       - Zero / treat as missing / impute from prior average.
 */
 RECURSIVE fill_imputed AS (
@@ -134,7 +134,7 @@ RECURSIVE fill_imputed AS (
 ),
 
 /* 
-  1. unique_postal_codes, split_site_codes, filtered_sites 
+  2. unique_postal_codes, split_site_codes, filtered_sites 
       are the same as in your existing code. 
 */
 unique_postal_codes AS (
@@ -213,7 +213,7 @@ filtered_sites AS (
 ),
 
 /*
-   2. The base data you provided: we gather monthly cost_k_gbp for each site_code.
+   3. The base data you provided: we gather monthly cost_k_gbp for each site_code.
 */
 filtered_base_data AS (
     SELECT 
@@ -243,7 +243,7 @@ filtered_base_data AS (
 ),
 
 /*
-   3. We build a cross join so each site has a record for every month in min_month..max_month
+   4. We build a cross join so each site has a record for every month in min_month..max_month
 */
 all_site_months AS (
     SELECT fs.site_code, m.month_num
@@ -252,7 +252,7 @@ all_site_months AS (
 ),
 
 /*
-   4. Left-join actual cost. If no row / cost_k_gbp is NULL.
+    5. Left-join actual cost. If no row / cost_k_gbp is NULL.
       If cost is 0 in filtered_base_data / we keep it as 0 for now, 
       but will treat it as missing in the recursion.
 */
@@ -337,13 +337,10 @@ trend_with_drop AS (
   JOIN min_max_costs mmc USING (site_code)
 )
 
-SELECT
+SELECT distinct
   site_code,
   first_cost,
   last_cost,
   drop_percentage
 FROM trend_with_drop
 ORDER BY drop_percentage DESC NULLS LAST;
-
--- select * from final_filled where site_code='BRN'
-

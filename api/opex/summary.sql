@@ -174,7 +174,7 @@ base_data AS (
         CASE WHEN :topN IS NULL THEN filtered_sites.site_code END ASC
     LIMIT CASE WHEN :topN IS NOT NULL THEN :topN ELSE 1000 END
 )
-SELECT *
+SELECT distinct *
 FROM base_data
 WHERE 
     (:min_cost IS NULL OR total_cost_in_k_GBP>:min_cost) 

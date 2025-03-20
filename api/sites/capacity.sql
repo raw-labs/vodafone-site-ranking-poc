@@ -10,9 +10,9 @@
 -- @type site_name varchar
 -- @default site_name null
 
--- @param site_region The geographic region of the site (UK). Substring search is supported.
--- @type site_region varchar
--- @default site_region null
+-- @param site_regions A comma-separated list of geographic region of the sites (UK). Substring search is supported.
+-- @type site_regions varchar
+-- @default site_regions null
 
 -- @param site_address The UK address of the site. Substring search is supported.
 -- @type site_address varchar
@@ -50,7 +50,7 @@
 -- @type page integer
 -- @default page 1
 
--- @param page_size the number of records per page. Default value is 50.
+-- @param page_size the number of records per page. Default value is 500.
 -- @type page_size integer
 -- @default page_size 500
 
@@ -229,10 +229,11 @@ fixed_aggr_capacity AS (
 vf_fixed_capacity_avg AS (
     select 
         MAX(fc.general_equipment_area_code) as general_equipment_area_code, 
-        fc.general_equipment_area_code || trim(regexp_replace(regexp_replace(general_system_name, '[AaBb]$', '', 'g'), 'SYS[ ]*[AaBb]', 'SYS', 'g')) as minus_compl,
+        fc.general_equipment_area_code || trim(regexp_replace(regexp_replace(replace(general_system_name,' (DO NOT CONNECT LOADS)',''), '[AaBb]$', '', 'g'), 'SYS[ ]*[AaBb]', 'SYS', 'g')) as minus_compl,
         AVG(fc.power_kw_load_remaining_after_total_allocated) as remaining_power_capacity_in_kw,
         SUM(fc.power_actual_load_kw) as running_load_in_kw,
-        SUM(fc.kw_power_remaining_80_of_n) as remaining_power_80_of_n_in_kw
+        SUM(fc.kw_power_remaining_80_of_n) as remaining_power_80_of_n_in_kw,
+        SUM(fc.total_allocated_load_kw) as total_allocated_load_kw
     FROM fixed_aggr_capacity as fc
     GROUP BY minus_compl
 ),
@@ -245,7 +246,7 @@ vf_fixed_capacity AS (
         SUM(remaining_power_80_of_n_in_kw) as remaining_power_80_of_n_in_kw,
         CAST(NULL as FLOAT) as forecasted_load_in_kw,
         CAST(NULL as FLOAT) as reserved_load_in_kw,
-        CAST(NULL as FLOAT) as total_allocated_in_kw
+        SUM(total_allocated_load_kw) as total_allocated_in_kw
     FROM vf_fixed_capacity_avg as fc
     GROUP BY general_equipment_area_code
 ),
@@ -289,7 +290,13 @@ filtered_sites AS (
         OR UPPER(TRIM(site_code)) IN (SELECT UPPER(TRIM(code)) FROM split_site_codes)
         )
 		AND (:site_name IS NULL OR vfsites.site_name ILIKE CONCAT('%', :site_name, '%'))
-		AND (:site_region IS NULL OR UPPER(vfsites.region) ILIKE  CONCAT(:site_region, '%'))
+        AND (:site_regions IS NULL OR EXISTS (
+            SELECT 1
+            FROM unnest(regexp_split_to_array(trim(upper(:site_regions)), ',')) AS arr1(elem1)
+                CROSS JOIN unnest(regexp_split_to_array(trim(upper(vfsites.region)), ',')) AS arr2(elem2)
+            WHERE trim(elem2) LIKE '' ||trim(elem1) || '%'
+        ))
+		-- AND (:site_region IS NULL OR UPPER(vfsites.region) ILIKE  CONCAT(:site_region, '%'))
 		AND (:site_address IS NULL OR vfsites.address ILIKE CONCAT('%', :site_address, '%'))
 		AND (:freehold_leasehold IS NULL OR UPPER(vfsites.freehold_leasehold) = UPPER(:freehold_leasehold))
 		AND (:site_status IS NULL OR vfsites.status = :site_status)
@@ -351,5 +358,5 @@ WHERE
     AND (:forecasted_load_in_kw_maximum IS NULL OR forecasted_load_in_kw<=:forecasted_load_in_kw_maximum)
     AND (:remaining_power_80_of_n_in_kw_minimum IS NULL OR remaining_power_80_of_n_in_kw>=:remaining_power_80_of_n_in_kw_minimum)
     AND (:remaining_power_80_of_n_in_kw_maximum IS NULL OR remaining_power_80_of_n_in_kw<=:remaining_power_80_of_n_in_kw_maximum)
-LIMIT COALESCE(:page_size, 50)
-OFFSET (COALESCE(:page, 1) - 1) * COALESCE(:page_size, 50);
+LIMIT COALESCE(:page_size, 500)
+OFFSET (COALESCE(:page, 1) - 1) * COALESCE(:page_size, 500);
