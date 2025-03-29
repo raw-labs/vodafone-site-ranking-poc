@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Identify Outliers for Space data
+  description: Identify Outliers for Space data
+  tags:
+    - vodafone
+    - outliers
+    - space
+code: sql
+codeFile: space.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

@@ -406,6 +406,11 @@ def multi_excel_to_sqlite(config, conn):
     first_data_file_used = False
 
     for full_path, fmatch in all_files:
+        if os.path.getsize(full_path) == 0:
+            print(f"Skipping empty file: {full_path}")
+            continue
+    
+        print(f"-- Processing file '{full_path}'.")
         # If there's a capturing group for filename, store that in the row if desired
         extra_val = None
         if filename_col:

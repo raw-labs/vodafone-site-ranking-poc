@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Summarize Vodafone Network Sites
+  description: Summarizes the total number of VF Network Sites based on various filters and groups them by a specified field. Permissible group by fields are these - 'site_type', 'region', 'status', '', 'gis_migrated', 'restricted`, 'freehold_leasehold`, `power_resilience`
+  tags:
+    - vodafone
+    - sites
+    - summary
+code: sql
+codeFile: summary.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

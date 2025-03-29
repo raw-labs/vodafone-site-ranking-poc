@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Get opex outliers
+  description: This SQL identifies discrepancies between Vodafone site records, the bridge reference table (Book excel file), and associated Opex data. It flags issues like postcode mismatches, missing bridge references, or unlinked Opex records. By unifying all mismatched scenarios, this query enables quick diagnosis and resolution of data alignment problems across these three data sources.
+  tags:
+    - vodafone
+    - outliers
+    - opex
+code: sql
+codeFile: opex.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

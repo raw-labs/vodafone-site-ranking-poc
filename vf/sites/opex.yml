@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Monthly Opex Array with Zero-Imputation by Sites
+  description: This endpoint retrieves each site’s monthly Opex costs over a specified year and month range, returning an array of costs for easy chart visualization. Any zero-cost month is treated as missing and imputed by the average of all prior non-zero months, ensuring a continuous time series without artificial zero dips. The site selection is governed by standard filters like site type, site code, freehold status, and region, along with bridging logic through Book excel file.
+  tags:
+    - vodafone
+    - opex
+    - monthly
+code: sql
+codeFile: opex.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

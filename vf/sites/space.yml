@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Retrieve Vodafone Site Space Information
+  description: This endpoint provides space-related data for Vodafone sites, combining `vfsites` with a `space_base` table that tracks sections, lines, and area usage. Standard site filters apply (site type, site codes, region, address, etc.). Additionally, numeric filters allow refining the results by minimum or maximum values of free, occupied, or reserved sections, as well as area or lines capability. This endpoint is primarily used to answer queries about available (free) site space, capacities, and other space metrics. If you need to see which sites can accommodate new installations or expansions, for example, you can  filter on `free_sections_minimum` or `location_free_area_minimum`. Filtering works better with site codes instead of any other criteria, so precedence should be given to site codes.
+  tags:
+    - vodafone
+    - sites
+    - space
+code: sql
+codeFile: space.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

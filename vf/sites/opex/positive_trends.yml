@@ -1,0 +1,17 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Get sites in strictly increasing cost order (positive OPEX trends), along with first & last month costs and the increase percentage.
+  description: This endpoint identifies sites whose monthly Opex costs (in thousands of GBP) strictly increase from the beginning to the end of a specified date range. By default, it examines months between min_month and max_month in the given year. Any zero values are treated as missing data and imputed by averaging previous non-missing months. If each subsequent month’s cost is lower (or if a site has no next month in range), the site is flagged as having a positive trend. Various filtering parameters allow you to narrow down by site types, site codes, address, region, leasehold/freehold, status, etc., while additional logic can distinguish mobile vs. fixed domains. The final output includes each qualifying site code’s first and last imputed cost, along with its drop percentage. Essentially this endpoint returns positive OPEX trend data.
+  tags:
+    - vodafone
+    - opex
+    - trends
+    - positive
+code: sql
+codeFile: positive_trends.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

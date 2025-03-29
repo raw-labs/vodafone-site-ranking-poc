@@ -1,0 +1,15 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Opex Aggregation for Vodafone Sites
+  description: This endpoint returns an aggregated operational expenditure (Opex) value (in thousands of GBP) for Vodafone sites over a specified date range. Users can customize the query via parameters that filter by site characteristics—such as site type, site codes, address, region, leasehold/freehold, status, GIS migration, and whether it is a mobile or fixed network domain. A specific year and month range (min_month to max_month) determines which readings to aggregate, while optional min_cost and max_cost parameters further refine results based on total cost thresholds. If topN is provided, the dataset is sorted by descending cost so only the top‐cost sites are returned; otherwise it sorts by site code. Pagination is supported via page and page_size to handle large result sets.
+  tags:
+    - vodafone
+    - opex
+code: sql
+codeFile: summary.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true
