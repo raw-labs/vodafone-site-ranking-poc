@@ -1,0 +1,20 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Retrieve Vodafone Sites with Combined Fixed/Mobile Power Capacity, Space, and OPEX
+  description: This endpoint provides a unified view of Vodafone sites, merging data from multiple sources (fixed capacity, mobile capacity, space usage, OPEX). It supports extensive filtering options, including site types, codes, name, region, address, freehold/leasehold, site status, power resilience, and network domain. You can also filter by capacity metrics (remaining/running load, allocated/reserved load, forecasted load, 80% load), space metrics (sections, area, lines/location capability), and OPEX costs (year/month ranges, min/max cost, top-N sorting). Substring matching is enabled for certain fields (e.g., site_name, site_address, comments). Pagination is handled via page and page_size (default 500). Results return site attributes plus aggregated capacity, space, and OPEX data, allowing detailed insight into both fixed and mobile sites for capacity planning, cost optimization, and site-level analysis.
+  tags:
+    - vodafone
+    - opex
+    - space
+    - sites
+    - capacity
+    - seats
+    - sections
+code: sql
+codeFile: combined.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

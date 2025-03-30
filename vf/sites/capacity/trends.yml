@@ -1,0 +1,16 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Retrieve Historical Monthly Power Capacity Trends for Vodafone Sites (Fixed & Mobile)
+  description: This endpoint returns historical monthly power capacity data for both fixed and mobile Vodafone sites over multiple file dates, allowing users to track how capacity metrics have evolved over time. For each site, it aggregates arrays of values—such as remaining capacity, running load, total allocated load, reserved load, forecasted load, and 80% capacity metrics—sorted by file date. It merges records from vdf.vfsites, vdf.historic_fixed_capacity, and vdf.historic_mtx_capacity (including corner-case MTX sites) to build consolidated rows. You can filter by comma-separated site codes (site_codes) and specify pagination (page/page_size, default 500). The result is a single set of rows, each capturing the capacity progression of a site across time. This lets you identify capacity trends, plan expansions, and monitor load forecasts in a unified view.
+  tags:
+    - vodafone
+    - sites
+    - capacity
+code: sql
+codeFile: capacity.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

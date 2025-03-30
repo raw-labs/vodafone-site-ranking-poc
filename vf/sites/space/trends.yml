@@ -1,0 +1,19 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Retrieve Vodafone Sites with Historical Free Sections Trend (2024)
+  description: This endpoint returns Vodafone sites (excluding MTX and LTC) along with a monthly trend of free sections (space availability) for 2024, compiled from historical fixed capacity data. Given optional site codes, it filters sites in vdf.vfsites and joins them with vdf.historic_fixed_capacity (aggregated by general_equipment_area_code) to produce an array of free_sections_monthly_trend_2024. You can specify pagination via page and page_size (default 500) to manage large result sets. This enables analysis of free section usage across months for capacity planning, space optimization, or trend tracking within the Vodafone fixed network.
+  tags:
+    - vodafone
+    - sites
+    - space
+    - seats
+    - trends
+    - monthly
+code: sql
+codeFile: capacity.sql
+format: json
+security:
+  public: true
+computeClass: normal
+enabled: true

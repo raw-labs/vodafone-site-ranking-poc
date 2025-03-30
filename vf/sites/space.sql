@@ -66,6 +66,14 @@
 -- @type free_sections_maximum integer
 -- @default free_sections_maximum null
 
+-- @param free_sections_percentage_minimum min percentage of free sections
+-- @type free_sections_percentage_minimum decimal
+-- @default free_sections_percentage_minimum null
+
+-- @param free_sections_percentage_maximum max percentage of free sections
+-- @type free_sections_percentage_maximum decimal
+-- @default free_sections_percentage_maximum null
+
 -- @param occupied_sections_minimum min number of occupied sections
 -- @type occupied_sections_minimum integer
 -- @default occupied_sections_minimum null
@@ -149,6 +157,12 @@ WITH space_base AS (
           END
         ) AS free_sections,
 
+        MAX(
+          CASE WHEN col1_c1 = 'Total free sections:' 
+               THEN free_section_percentage::decimal 
+          END
+        ) AS free_section_percentage,
+
         -- Parse the '75' from "75/78" when col1_c1 = 'Total occupied sections:'
         MAX(
           CASE WHEN col1_c1 = 'Total occupied sections:' 
@@ -217,7 +231,7 @@ WITH space_base AS (
           END
         ) AS gen_site_code
 
-    FROM vdf."space"
+    FROM vdf.vfspace
     GROUP BY site_code
 ),
 split_site_codes AS (
@@ -321,6 +335,7 @@ combined AS (
       sb.occupied_sections,
       sb.reserved_sections,
       sb.total_sections,
+      sb.free_section_percentage,
       sb.free_sections_area,
       sb.occupied_sections_area,
       sb.lines_capability,
@@ -350,6 +365,14 @@ combined AS (
         AND (
           :free_sections_maximum IS NULL 
           OR sb.free_sections<=:free_sections_maximum
+        )
+        AND (
+          :free_sections_percentage_minimum IS NULL
+          OR (sb.free_section_percentage)>=:free_sections_percentage_minimum
+        )
+        AND (
+          :free_sections_percentage_maximum IS NULL
+          OR (sb.free_section_percentage)<=:free_sections_percentage_maximum
         )
 
         /* Occupied sections filter */

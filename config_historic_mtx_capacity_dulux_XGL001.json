@@ -1,0 +1,11 @@
+{
+  "tableName": "historic_mtx_capacity_xgl001",
+  "sheetName": "BKLN06 & XGL001 power_Capacity",
+  "region": "A7:O23",
+  "headerRows":1,
+  "headerJoiner": "-",
+  "typeApproach": "stringAll",
+  "directory": "/opt/projects/Raw/projects/vodafone-pov-3/structured-data-poc/Capacity Data/Dulux - Power Plant Loading 2024/",
+  "filenamePattern": "^(.*)\\sMTX.*xlsx$",
+  "filenameColumnName": "file_date"
+}

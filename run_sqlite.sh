@@ -36,8 +36,23 @@ python excel_to_sqlite.py "structured-data-poc/All_Network_Site_data_AO_02_12_24
 echo -e "\n\nProcessing historic mobile site capacity"
 python excel_to_sqlite.py ignore_this config_historic_mtx_capacity.json
 
+echo -e "\n\nProcessing historic mobile site capacity for code XGL001"
+python excel_to_sqlite.py ignore_this config_historic_mtx_capacity_dulux_XGL001.json
+
+echo -e "\n\nProcessing historic mobile room capability for code XGL001"
+python excel_to_sqlite.py ignore_this config_historic_mtx_capacity_dulux_XGL001_room_capability.json
+
+echo -e "\n\nProcessing historic mobile site capacity for code BKLN06"
+python excel_to_sqlite.py ignore_this config_historic_mtx_capacity_dulux_BKLN06.json
+
+echo -e "\n\nProcessing historic mobile room capability for code BKLN06"
+python excel_to_sqlite.py ignore_this config_historic_mtx_capacity_dulux_BKLN06_room_capability.json
+
 echo -e "\n\nProcessing historic fixed site capacity"
 python excel_to_sqlite.py ignore_this config_historic_fixed_capacity.json
+
+echo -e "\n\nProcessing historic fixed site capacity - cover"
+python excel_to_sqlite.py ignore_this config_historic_fixed_capacity_cover.json
 
 echo -e "\n\nProcessing space data"
 python excel_to_sqlite.py ignore_this config_space.json
