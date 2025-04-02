@@ -70,14 +70,13 @@
 -- @type topN integer
 -- @default topN null
 
--- @param forecast_years How many future years to forecast beyond 'year'
+-- @param forecast_years How many future years to forecast beyond 2024 (current year)
 -- @type forecast_years integer
 -- @default forecast_years 1
 
 -- @param annual_growth_percent The annual cost growth rate (percentage). 
--- E.g. 0.24 means +24% each year
 -- @type annual_growth_percent decimal
--- @default annual_growth_percent 0.23
+-- @default annual_growth_percent 23
 
 -- @param page the current page number to retrieve
 -- @type page integer
@@ -230,11 +229,11 @@ forecasted_years AS (
       -- the future year => base 'year' + offset */
       (:year + g) AS forecast_year,
        
-      --   Future cost = base_cost_k_gbp * (1 + annual_growth_percent)^g
-      --   Example: if annual_growth_percent=0.24 => each year is +24% cumulatively
+      --   Future cost = base_cost_k_gbp * (1 + annual_growth_percent/100)^g
+      --   Example: if annual_growth_percent=24 => each year is +24% cumulatively
       
       ROUND(
-        bd.base_cost_k_gbp * POWER(1 + COALESCE(:annual_growth_percent,0), g),
+        bd.base_cost_k_gbp * POWER(1 + COALESCE(:annual_growth_percent,0)/100.0, g),
         2
       ) AS forecasted_cost_k_gbp
     FROM base_data_filtered bd
