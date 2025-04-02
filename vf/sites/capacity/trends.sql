@@ -13,7 +13,7 @@
 -- @return Vodafone Sites with Combined Fixed/Mobile Power Capacity Filters.
 
 WITH mobile_aggr_capacity AS (
-	SELECT mtx, file_date,
+	SELECT mtx, TO_DATE(upper(trim(file_date)), '01 MON YY') as file_date,
 		(sum(CAST(remaining_element_capability_a AS FLOAT))*54.5/1000) as aggr_remaining_power_capacity_kw,
 		(sum(CAST(
                 COALESCE(element_load_a_jan_24,element_load_a_feb_24,element_load_a_mar_24,element_load_a_apr_24,element_load_a_may_24,element_load_a_jun_24,element_load_a_jul_24,element_load_a_aug_24,element_load_a_sep_24,element_load_a_oct_24,element_load_a_nov_24,element_load_a_22_12_24)
@@ -37,7 +37,7 @@ vf_mobile_capacity AS (
     GROUP BY mtx
 ),
 fixed_aggr_capacity AS (
-    SELECT general_equipment_area_code, general_system_name, c.file_date,
+    SELECT general_equipment_area_code, general_system_name, TO_DATE(upper(trim(c.file_date)), 'YYMM01') as file_date,
         (
             CASE 
                 WHEN power_kw_load_remaining_after_total_allocated_inc__f6fe184e IS NULL 
