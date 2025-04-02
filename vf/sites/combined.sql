@@ -375,81 +375,87 @@ vf_fixed_capacity AS (
     FROM vf_fixed_capacity_avg as fc
     GROUP BY general_equipment_area_code
 ),
-space_base AS (
+sites_excluded_duplicate_non_identical_numbers AS (
+    select distinct site_code --, col1_c1, count(distinct quantity), string_agg(distinct quantity, ',')
+    from vdf."space"
+    where col1_c1 IS NOT NULL
+    group by site_code, col1_c1
+    having count(distinct quantity)>1
+), space_pivot AS (
     SELECT
         site_code,
         -- Parse the '3' from "3/78" when col1_c1 = 'Total free sections:'
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total free sections:' 
                THEN split_part(quantity, '/', 1)::int 
           END
         ) AS free_sections,
 
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total free sections:' 
                THEN free_section_percentage::decimal 
           END
         ) AS free_section_percentage,
 
         -- Parse the '75' from "75/78" when col1_c1 = 'Total occupied sections:'
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total occupied sections:' 
                THEN split_part(quantity, '/', 1)::int 
           END
         ) AS occupied_sections,
 
         -- Parse the '0' from "0/78" when col1_c1 = 'Total reserved sections:'
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total reserved sections:' 
                THEN split_part(quantity, '/', 1)::int 
           END
         ) AS reserved_sections,
 
         -- Parse the '78' from "0/78" => total possible sections
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total reserved sections:' 
                THEN split_part(quantity, '/', 2)::int 
           END
         ) AS total_sections,
 
         -- e.g. "3.452 m^2" => parse numeric portion => 3.452
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total free sections:' 
                THEN regexp_replace(area, '[^0-9\\.]+', '', 'g')::numeric 
           END
         ) AS free_sections_area,
 
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total occupied sections:' 
                THEN regexp_replace(area, '[^0-9\\.]+', '', 'g')::numeric 
           END
         ) AS occupied_sections_area,
 
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total Lines Capability' 
                THEN regexp_replace(area, '[^0-9\\.]+', '', 'g')::numeric 
           END
         ) AS lines_capability,
 
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total Location Capability' 
                THEN regexp_replace(area, '[^0-9\\.]+', '', 'g')::numeric 
           END
         ) AS location_capability,
 
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total Location Free Area' 
                THEN regexp_replace(area, '[^0-9\\.]+', '', 'g')::numeric 
           END
         ) AS location_free_area,
 
-        MAX(
+        (
           CASE WHEN col1_c1 = 'Total Location Occupied Area' 
                THEN regexp_replace(area, '[^0-9\\.]+', '', 'g')::numeric 
           END
         ) AS location_occupied_area,
 
-        MAX(
+        (
           CASE 
             WHEN col1_c1 LIKE 'Room%' 
             THEN regexp_replace(
@@ -459,7 +465,23 @@ space_base AS (
           END
         ) AS gen_site_code
 
-    FROM vdf."vfspace"
+    FROM vdf.vfspace
+    WHERE site_code NOT IN (select site_code from sites_excluded_duplicate_non_identical_numbers)
+), space_base AS (
+    SELECT site_code, 
+        MAX(free_sections) AS free_sections,
+        MAX(free_section_percentage) AS free_section_percentage,
+        MAX(occupied_sections) AS occupied_sections,
+        MAX(reserved_sections) AS reserved_sections,
+        MAX(total_sections) AS total_sections,
+        MAX(free_sections_area) AS free_sections_area,
+        MAX(occupied_sections_area) AS occupied_sections_area,
+        MAX(lines_capability) AS lines_capability,
+        MAX(location_capability) AS location_capability,
+        MAX(location_free_area) AS location_free_area,
+        MAX(location_occupied_area) AS location_occupied_area,
+        MAX(gen_site_code) AS gen_site_code
+    FROM space_pivot
     GROUP BY site_code
 ),
 unique_postal_codes AS (
