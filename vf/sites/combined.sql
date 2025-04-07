@@ -378,7 +378,7 @@ vf_fixed_capacity AS (
 sites_excluded_duplicate_non_identical_numbers AS (
     select distinct site_code --, col1_c1, count(distinct quantity), string_agg(distinct quantity, ',')
     from vdf."space"
-    where col1_c1 IS NOT NULL
+    where col1_c1 IS NOT NULL AND quantity NOT LIKE '% W' AND site_code!='BKLN05'
     group by site_code, col1_c1
     having count(distinct quantity)>1
 ), space_pivot AS (
@@ -495,13 +495,19 @@ split_site_codes AS (
   FROM regexp_split_to_table(COALESCE(:site_codes, ''), ',') AS x
 ),
 filtered_sites AS (
-	SELECT *
+	SELECT vfsites.site_code, vfsites.site_name, vfsites.site_type as original_site_type, replace(
+                            upper(site_category), 'PABR', 'PABR,PCORE'
+                        ) 
+                        ||','||
+                        upper(site_type) AS site_type, vfsites.site_category, vfsites.region, vfsites.status, 
+                        vfsites.address, vfsites.postcode, vfsites.gis_migrated, vfsites.floorplans,
+                        vfsites.location, vfsites.comments, vfsites.restricted, vfsites.freehold_leasehold, 
+                        vfsites.power_resilience
 	FROM vdf.vfsites
 	WHERE
 		(
             :site_types IS NULL 
         OR 
-            -- UPPER(vfsites_with_custom_type.vf_site_type) IN (SELECT trim(replace(upper(code),'-','') ) FROM split_site_types)
             regexp_split_to_array(
                 COALESCE(
                     trim(
@@ -564,7 +570,7 @@ combined_with_capacity_tmp AS (
     FROM filtered_sites s 
         LEFT OUTER JOIN vf_fixed_capacity fc 
             ON upper(trim(fc.general_equipment_area_code)) = trim(replace(replace(upper(s.site_code), '(GROUND FLOOR)', ''), 'ROOM', ''))
-    WHERE site_type NOT IN ('MTX','LTC')
+    WHERE original_site_type NOT IN ('MTX','LTC')
     
     -- GROUP BY rollup(fc.general_equipment_area_code, fc.general_system_name)
     UNION
@@ -580,7 +586,7 @@ combined_with_capacity_tmp AS (
         LEFT OUTER JOIN vf_mobile_capacity
         ON filtered_sites.site_code=vf_mobile_capacity.mtx 
             OR (filtered_sites.site_code NOT IN ('XGL001 (BMGMTX)', 'BKLN06') AND filtered_sites.site_name=trim(split_part(vf_mobile_capacity.mtx, ' TXO', 1)))
-    WHERE (filtered_sites.site_type='LTC' OR filtered_sites.site_type='MTX')
+    WHERE (filtered_sites.original_site_type='LTC' OR filtered_sites.original_site_type='MTX')
 ),
 combined_with_capacity AS (
     SELECT * 
@@ -736,9 +742,25 @@ combined_with_space AS (
           :location_occupied_area_maximum IS NULL 
           OR sb.location_occupied_area<=:location_occupied_area_maximum
         )
+), unique_property_tmp AS (
+  SELECT * ,
+    -- Step 4: expired flag
+    (NOW() > CAST(lease_end AS TIMESTAMP)) AS is_expired,
+    -- Steps 2 & 3: rank rows by max(lease_end) and then by most recent lease_start
+    ROW_NUMBER() OVER (
+      PARTITION BY property_reference
+      ORDER BY CAST(lease_end AS TIMESTAMP) DESC, CAST(lease_start AS TIMESTAMP) DESC
+    ) AS rn
+  FROM vdf."ownership"
+  -- Step 1: discard future leases
+  WHERE CAST(lease_start AS TIMESTAMP) <= NOW()
+), unique_property AS (
+  SELECT *
+  FROM unique_property_tmp
+  WHERE rn=1
 ), combined_with_ownership_codes AS (
   SELECT combined_with_space.site_code, 
-    ownership.at_risk, ownership.tenure, ownership.tenancy_reference, CAST(lease_end AS TIMESTAMP) as lease_end, CAST(lease_start AS TIMESTAMP) as lease_start
+    ownership.at_risk, ownership.col1_c32 as reason_lease_at_risk, ownership.tenure, ownership.tenancy_reference, CAST(lease_end AS TIMESTAMP) as lease_end, CAST(lease_start AS TIMESTAMP) as lease_start
   FROM combined_with_space
     INNER JOIN vdf.vfbridge 
       ON upper(trim(vfbridge.site_code))=upper(trim(combined_with_space.site_code))
@@ -746,19 +768,44 @@ combined_with_space AS (
       ON ownership.property_reference_2=regexp_replace(bridge_site_code, '(.*)\\_', '')
         AND upper(trim(ownership.business_division))='TECHNOLOGY' --AND upper(trim(ownership.primary_use))='OFFICE'
   UNION
-  SELECT s.site_code, o.at_risk, o.tenure, o.tenancy_reference, CAST(lease_end AS TIMESTAMP) as lease_end, CAST(lease_start AS TIMESTAMP) as lease_start
+  SELECT s.site_code, o.at_risk, o.col1_c32 as reason_lease_at_risk, o.tenure, o.tenancy_reference, CAST(lease_end AS TIMESTAMP) as lease_end, CAST(lease_start AS TIMESTAMP) as lease_start
   FROM combined_with_space s 
     INNER JOIN vdf.ownership o 
       ON s.postcode=o.postcode 
         AND upper(trim(o.business_division))='TECHNOLOGY' --AND upper(trim(o.primary_use))='OFFICE'
-), combined_with_ownership_unfiltered AS (
+), 
+-- Ownership filtering algorithm:
+-- 1. discard all future leases - NOW() < lease_start
+-- 2. keep the record(s) with lease_end=MAX(lease_end) group by site_code
+-- 3. if there are more than 1 records per site, then keep the one with MIN(NOW()-lease_start)
+-- 4. for the expired leases (NOW()>lease_end) set TRUE to is_expired; otherwise set false
+combined_with_ownership_codes_unique_records_tmp AS (
+  SELECT
+    *,
+    -- Step 4: expired flag
+    (NOW() > lease_end) AS is_expired,
+    -- Steps 2 & 3: rank rows by max(lease_end) and then by most recent lease_start
+    ROW_NUMBER() OVER (
+      PARTITION BY site_code
+      ORDER BY lease_end DESC, lease_start DESC
+    ) AS rn
+  FROM combined_with_ownership_codes
+  -- Step 1: discard future leases
+  WHERE lease_start <= NOW()
+), combined_with_ownership_codes_unique_records AS (
+  SELECT * 
+  FROM combined_with_ownership_codes_unique_records_tmp 
+  WHERE rn=1
+),
+combined_with_ownership_unfiltered AS (
   SELECT DISTINCT s.*, (CASE WHEN c.at_risk IS NOT NULL AND upper(trim(at_risk))='AT RISK' THEN true else false END) as at_risk, 
+    c.reason_lease_at_risk,
     c.tenure, c.tenancy_reference, CAST(lease_end AS TIMESTAMP) as lease_end, CAST(lease_start AS TIMESTAMP) as lease_start
   FROM combined_with_space s 
-    LEFT OUTER JOIN combined_with_ownership_codes c
+    LEFT OUTER JOIN combined_with_ownership_codes_unique_records c
       ON s.site_code=c.site_code
-        AND c.tenancy_reference=(SELECT MIN(tenancy_reference) FROM combined_with_ownership_codes ow WHERE ow.site_code=c.site_code)
-        AND NOW()<CAST(lease_end AS TIMESTAMP) AND NOW()>CAST(lease_start AS TIMESTAMP) 
+        AND c.tenancy_reference=(SELECT MIN(tenancy_reference) FROM combined_with_ownership_codes_unique_records ow WHERE ow.site_code=c.site_code)
+        -- AND NOW()<CAST(lease_end AS TIMESTAMP) AND NOW()>CAST(lease_start AS TIMESTAMP) 
 ), combined_with_ownership AS (
   SELECT * 
   FROM combined_with_ownership_unfiltered
@@ -807,6 +854,7 @@ combined_with_opex AS (
 )
 SELECT *
 FROM combined_with_opex
+WHERE not(site_code='BDEN04' AND free_sections=0) -- outlier due to BDE 2025-02-20 (space file)
 ORDER BY
         -- If topN is provided, sort by total_cost DESC; otherwise sort by site_code ASC
         CASE WHEN :topN IS NOT NULL THEN total_cost_in_k_gbp END DESC,

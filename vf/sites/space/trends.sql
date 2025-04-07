@@ -27,7 +27,14 @@ split_site_codes AS (
   FROM regexp_split_to_table(COALESCE(:site_codes, ''), ',') AS x
 ),
 filtered_sites AS (
-	SELECT *
+	SELECT vfsites.site_code, vfsites.site_name, vfsites.site_type as original_site_type, replace(
+                            upper(site_category), 'PABR', 'PABR,PCORE'
+                        ) 
+                        ||','||
+                        upper(site_type) AS site_type, vfsites.site_category, vfsites.region, vfsites.status, 
+                        vfsites.address, vfsites.postcode, vfsites.gis_migrated, vfsites.floorplans,
+                        vfsites.location, vfsites.comments, vfsites.restricted, vfsites.freehold_leasehold, 
+                        vfsites.power_resilience
 	FROM vdf.vfsites
 	WHERE
 		(
@@ -40,7 +47,7 @@ combined AS (
     FROM filtered_sites s 
         LEFT OUTER JOIN fixed_historic fc 
             ON upper(trim(fc.general_equipment_area_code)) = trim(replace(replace(upper(s.site_code), '(GROUND FLOOR)', ''), 'ROOM', ''))
-    WHERE site_type NOT IN ('MTX','LTC')
+    WHERE original_site_type NOT IN ('MTX','LTC')
 )
 SELECT distinct *
 FROM combined

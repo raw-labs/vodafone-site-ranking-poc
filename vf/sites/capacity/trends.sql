@@ -16,7 +16,10 @@ WITH mobile_aggr_capacity AS (
 	SELECT mtx, TO_DATE(upper(trim(file_date)), '01 MON YY') as file_date,
 		(sum(CAST(remaining_element_capability_a AS FLOAT))*54.5/1000) as aggr_remaining_power_capacity_kw,
 		(sum(CAST(
-                COALESCE(element_load_a_jan_24,element_load_a_feb_24,element_load_a_mar_24,element_load_a_apr_24,element_load_a_may_24,element_load_a_jun_24,element_load_a_jul_24,element_load_a_aug_24,element_load_a_sep_24,element_load_a_oct_24,element_load_a_nov_24,element_load_a_22_12_24)
+                COALESCE(element_load_a_28_01_24,element_load_a_25_02_24,element_load_a_24_03_24,
+                element_load_a_28_04_24,element_load_a_26_05_24,element_load_a_23_06_24,
+                element_load_a_28_07_24,element_load_a_18_08_24,element_load_a_29_09_24,
+                element_load_a_20_10_24,element_load_a_24_11_24,element_load_a_22_12_24)
             AS FLOAT))*54.5/1000) as aggr_running_load_kw,
 		(sum(CAST(reserved_a AS FLOAT)+CAST(forecast_a AS FLOAT))*54.5/1000) as aggr_total_allocated_kw,
 		(sum(CAST(reserved_a AS FLOAT))*54.5/1000) as aggr_reserved_load_kw,
@@ -117,7 +120,14 @@ split_site_codes AS (
   FROM regexp_split_to_table(COALESCE(:site_codes, ''), ',') AS x
 ),
 filtered_sites AS (
-	SELECT *
+	SELECT vfsites.site_code, vfsites.site_name, vfsites.site_type as original_site_type, replace(
+                            upper(site_category), 'PABR', 'PABR,PCORE'
+                        ) 
+                        ||','||
+                        upper(site_type) AS site_type, vfsites.site_category, vfsites.region, vfsites.status, 
+                        vfsites.address, vfsites.postcode, vfsites.gis_migrated, vfsites.floorplans,
+                        vfsites.location, vfsites.comments, vfsites.restricted, vfsites.freehold_leasehold, 
+                        vfsites.power_resilience
 	FROM vdf.vfsites
 	WHERE
 		(
@@ -136,7 +146,7 @@ combined AS (
     FROM filtered_sites s 
         LEFT OUTER JOIN vf_fixed_capacity fc 
             ON upper(trim(fc.general_equipment_area_code)) = trim(replace(replace(upper(s.site_code), '(GROUND FLOOR)', ''), 'ROOM', ''))
-    WHERE site_type NOT IN ('MTX','LTC')
+    WHERE original_site_type NOT IN ('MTX','LTC')
     
     -- GROUP BY rollup(fc.general_equipment_area_code, fc.general_system_name)
     UNION
@@ -152,7 +162,7 @@ combined AS (
         LEFT OUTER JOIN vf_mobile_capacity
         ON filtered_sites.site_code=vf_mobile_capacity.mtx 
             OR (filtered_sites.site_code NOT IN ('XGL001 (BMGMTX)', 'BKLN06') AND filtered_sites.site_name=trim(split_part(vf_mobile_capacity.mtx, ' TXO', 1)))
-    WHERE (filtered_sites.site_type='LTC' OR filtered_sites.site_type='MTX')
+    WHERE (filtered_sites.original_site_type='LTC' OR filtered_sites.original_site_type='MTX')
 )
 SELECT distinct *
 FROM combined
