@@ -10,9 +10,33 @@
 -- @type page_size integer
 -- @default page_size 500
 
+-- @param userid user identifier injected for authorization and data redaction purposes.
+-- @type userid varchar
+-- @default userid NULL
+
 -- @return Vodafone Sites with Combined Fixed/Mobile Power Capacity Filters.
 
-WITH mobile_aggr_capacity AS (
+WITH user_blacklist_opex AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-opex' AND id = :userid
+), user_blacklist_capacity AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-capacity' AND id = :userid
+), user_blacklist_space AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-space' AND id = :userid
+), user_blacklist_lease AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-lease' AND id = :userid
+), mobile_aggr_capacity AS (
 	SELECT mtx, TO_DATE(upper(trim(file_date)), '01 MON YY') as file_date,
 		(sum(CAST(remaining_element_capability_a AS FLOAT))*54.5/1000) as aggr_remaining_power_capacity_kw,
 		(sum(CAST(
@@ -166,5 +190,6 @@ combined AS (
 )
 SELECT distinct *
 FROM combined
+WHERE NOT EXISTS(SELECT * FROM user_blacklist_capacity) -- redact all non-capacity users
 LIMIT COALESCE(:page_size, 500)
 OFFSET (COALESCE(:page, 1) - 1) * COALESCE(:page_size, 500);

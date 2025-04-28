@@ -1,16 +1,20 @@
 raw: "0.10"
 endpoint: GET
 metadata:
-  title: Identify Outliers for Space data
-  description: Identify Outliers for Space data
+  title: Identify Mismatched or Missing Space/Seats/Sections Records for Vodafone Sites
+  description: This endpoint detects inconsistencies between the site records and space data. It flags site codes present in one source but missing from the other, returning each code alongside an exclusion_reason (e.g., “Not found in Space data” or “Not found in site data”). This helps highlight incomplete or mismatched records so you can resolve data integrity issues. If you pass a comma-separated list of site codes, only those codes are checked; otherwise, the endpoint reviews all sites. Results are ordered by exclusion reason for easy prioritization.
   tags:
     - vodafone
     - outliers
     - space
+    - sections
+    - seats
 code: sql
 codeFile: space.sql
 format: json
 security:
-  public: true
+  public: false
+  scopes:
+    - vodafone:admin
 computeClass: normal
 enabled: true

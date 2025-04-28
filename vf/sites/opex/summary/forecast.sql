@@ -86,10 +86,34 @@
 -- @type page_size integer
 -- @default page_size 50
 
+-- @param userid user identifier injected for authorization and data redaction purposes.
+-- @type userid varchar
+-- @default userid NULL
+
 -- @return For each site, returns the base year cost plus future cost projections 
 --         over the next N years at the specified annual growth rate.
 
-WITH unique_postal_codes AS (
+WITH user_blacklist_opex AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-opex' AND id = :userid
+), user_blacklist_capacity AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-capacity' AND id = :userid
+), user_blacklist_space AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-space' AND id = :userid
+), user_blacklist_lease AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-lease' AND id = :userid
+), unique_postal_codes AS (
     SELECT postcode
     FROM vdf.vfsites
     GROUP BY postcode
@@ -246,6 +270,7 @@ SELECT
   :year AS forecast_year,
   bd.base_cost_k_gbp AS forecasted_cost_k_gbp
 FROM base_data_filtered bd
+WHERE NOT EXISTS(SELECT * FROM user_blacklist_opex) -- redact all non-opex users
 
 UNION ALL
 
@@ -255,7 +280,7 @@ SELECT
   fy.forecast_year,
   fy.forecasted_cost_k_gbp
 FROM forecasted_years fy
-
+WHERE NOT EXISTS(SELECT * FROM user_blacklist_opex) -- redact all non-opex users
 ORDER BY site_code, forecast_year
 LIMIT :page_size
 OFFSET (:page - 1)*:page_size;

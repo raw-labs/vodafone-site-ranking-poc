@@ -11,6 +11,8 @@ code: sql
 codeFile: opex.sql
 format: json
 security:
-  public: true
+  public: false
+  scopes:
+    - vodafone:admin
 computeClass: normal
 enabled: true

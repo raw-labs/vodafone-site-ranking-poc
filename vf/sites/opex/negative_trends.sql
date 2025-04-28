@@ -60,10 +60,34 @@
 -- @type max_month integer
 -- @default max_month 12
 
+-- @param userid user identifier injected for authorization and data redaction purposes.
+-- @type userid varchar
+-- @default userid NULL
+
 -- @return Sites showing a strictly decreasing monthly cost from min_month..max_month,
 --         plus the first/last cost and drop_percentage between them.
 
-WITH
+WITH user_blacklist_opex AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-opex' AND id = :userid
+), user_blacklist_capacity AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-capacity' AND id = :userid
+), user_blacklist_space AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-space' AND id = :userid
+), user_blacklist_lease AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-lease' AND id = :userid
+), 
 --------------------------------------------------------------------
 -- 1. Filter Sites
 --------------------------------------------------------------------
@@ -290,4 +314,5 @@ SELECT distinct
   ROUND(last_cost, 1)   AS last_cost_k_gbp,
   drop_percentage
 FROM trend_with_drop
+WHERE NOT EXISTS(SELECT * FROM user_blacklist_opex) -- redact all non-opex users
 ORDER BY drop_percentage DESC NULLS LAST;

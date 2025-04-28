@@ -1,3 +1,4 @@
+ 
 -- @param site_types A comma-separated list of site types. Permissible values are: [LTC, P-core, PX, regular]
 -- @type site_types varchar
 -- @default site_types null
@@ -10,9 +11,9 @@
 -- @type site_name varchar
 -- @default site_name null
 
--- @param site_region The geographic region of the site (UK). Substring search is supported.
--- @type site_region varchar
--- @default site_region null
+-- @param site_regions A comma-separated list of geographic region of the sites (UK). Substring search is supported.
+-- @type site_regions varchar
+-- @default site_regions null
 
 -- @param site_address The UK address of the site. Substring search is supported.
 -- @type site_address varchar
@@ -249,7 +250,12 @@ filtered_sites AS (
         OR UPPER(TRIM(site_code)) IN (SELECT UPPER(TRIM(code)) FROM split_site_codes)
         )
 		AND (:site_name IS NULL OR vfsites.site_name ILIKE CONCAT('%', :site_name, '%'))
-		AND (:site_region IS NULL OR UPPER(vfsites.region) ILIKE  CONCAT(:site_region, '%'))
+		AND (:site_regions IS NULL OR EXISTS (
+        SELECT 1
+        FROM unnest(regexp_split_to_array(trim(upper(:site_regions)), ',')) AS arr1(elem1)
+            CROSS JOIN unnest(regexp_split_to_array(trim(upper(vfsites.region)), ',')) AS arr2(elem2)
+        WHERE trim(elem2) LIKE '' ||trim(elem1) || '%'
+    ))
 		AND (:site_address IS NULL OR vfsites.address ILIKE CONCAT('%', :site_address, '%'))
 		AND (:freehold_leasehold IS NULL OR UPPER(vfsites.freehold_leasehold) = UPPER(:freehold_leasehold))
 		AND (:site_status IS NULL OR vfsites.status = :site_status)

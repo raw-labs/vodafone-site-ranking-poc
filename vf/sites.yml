@@ -1,0 +1,18 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Retrieve Vodafone Sites
+  description: This endpoint retrieves a list of Vodafone fixed and mobile sites. It supports filters by site type/category, codes, address, leasehold/freehold, GIS migration, or resilience level. Use page and page_size to paginate (default 500 rows), and the network_domain parameter to restrict results to only mobile (MTX/LTC) or only fixed sites.
+  tags:
+    - vodafone
+    - sites
+code: sql
+codeFile: sites.sql
+format: json
+security:
+  public: false
+  scopes:
+    - vodafone:admin
+computeClass: normal
+enabled: false
+ 

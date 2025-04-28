@@ -11,6 +11,8 @@ code: sql
 codeFile: capacity.sql
 format: json
 security:
-  public: true
+  public: false
+  scopes:
+    - vodafone:admin
 computeClass: normal
-enabled: true
+enabled: false

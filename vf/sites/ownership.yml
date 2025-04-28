@@ -5,12 +5,15 @@ metadata:
   description: This endpoint returns Vodafone sites enriched with lease information and at-risk status, allowing you to filter by site codes, lease risk, and days until lease end. It merges records from vdf.vfsites, vdf.ownership, and vdf.vfbridge to provide each site’s lease start/end dates, tenure, tenancy reference, and whether the lease is “at risk.” The optional parameters let you restrict results to specific site codes (site_codes), lease conditions (is_lease_at_risk), or time windows for upcoming lease ends (less_than_given_days_until_lease_end or greater_than_given_days_until_lease_end). This helps pinpoint sites whose leases are nearing expiration or require attention, providing a clear view of property risks across the Vodafone portfolio.
   tags:
     - vodafone
-    - sites
-    - space
+    - ownership
+    - lease
+    - property
 code: sql
-codeFile: space.sql
+codeFile: ownership.sql
 format: json
 security:
-  public: true
+  public: false
+  scopes:
+    - vodafone:admin
 computeClass: normal
-enabled: true
+enabled: false

@@ -50,9 +50,33 @@
 -- @type group_by_field varchar
 -- @default group_by_field null
 
+-- @param userid user identifier injected for authorization and data redaction purposes.
+-- @type userid varchar
+-- @default userid NULL
+
 -- @return summary of the total number of accounts, grouped by the specified field.
 
-WITH split_site_codes AS (
+WITH user_blacklist_opex AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-opex' AND id = :userid
+), user_blacklist_capacity AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-capacity' AND id = :userid
+), user_blacklist_space AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-space' AND id = :userid
+), user_blacklist_lease AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-lease' AND id = :userid
+), split_site_codes AS (
   SELECT TRIM(x) AS code
   FROM regexp_split_to_table(COALESCE(:site_codes, ''), ',') AS x
 ),

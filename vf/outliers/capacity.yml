@@ -2,7 +2,7 @@ raw: "0.10"
 endpoint: GET
 metadata:
   title: Identify Site–Capacity Outliers
-  description: This endpoint cross-validates site records and capacity entries (mobile MTX vs. fixed) to pinpoint mismatches or missing references. The final output displays each problematic site code alongside the reason it could not be matched, helping you quickly address inconsistencies.
+  description: This endpoint cross-validates site records and capacity entries (mobile MTX vs. fixed) to pinpoint mismatches or missing references. The final output displays each problematic site code alongside the reason it could not be matched, helping you quickly address inconsistencies. If a comma-separated list of site codes is passed as input, the check is restricted to those codes; otherwise, the all sites are processed.
   tags:
     - vodafone
     - outliers
@@ -11,6 +11,8 @@ code: sql
 codeFile: capacity.sql
 format: json
 security:
-  public: true
+  public: false
+  scopes:
+    - vodafone:admin
 computeClass: normal
 enabled: true

@@ -4,6 +4,7 @@ metadata:
   title: Site OPEX Forecast Endpoint
   description: This endpoint extends the base OPEX summary by applying an annual growth rate to project operational costs for a user-specified number of years. It begins with filtering sites (by type, code, region, etc.), calculates each site’s current-year base cost, then iterates forward in time for up to :forecast_years. The output includes both the original year’s cost and each forecasted year. This helps answer questions like:
 “How would the OPEX cost of sites X, Y, Z change over the next 5 years if consumption rises by 24% annually?”
+Do not use this endpoint when referring to year 2024. This is ONLY meant to be used for years 2025 and on.
   tags:
     - vodafone
     - opex
@@ -12,6 +13,8 @@ code: sql
 codeFile: forecast.sql
 format: json
 security:
-  public: true
+  public: false
+  scopes:
+    - vodafone:admin
 computeClass: normal
 enabled: true

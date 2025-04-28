@@ -1,6 +1,37 @@
+-- @param site_codes A comma-separated list of site codes.
+-- @type site_codes varchar
+-- @default site_codes null
+
+-- @param userid user identifier injected for authorization and data redaction purposes.
+-- @type userid varchar
+-- @default userid NULL
+
 -- @return Vodafone Sites with Combined Fixed/Mobile Power Capacity Filters.
 
-WITH mtx_capacity_plus_corner_cases AS (
+WITH user_blacklist_opex AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-opex' AND id = :userid
+), user_blacklist_capacity AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-capacity' AND id = :userid
+), user_blacklist_space AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-space' AND id = :userid
+), user_blacklist_lease AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-lease' AND id = :userid
+), split_site_codes AS (
+  SELECT TRIM(x) AS code
+  FROM regexp_split_to_table(COALESCE(:site_codes, ''), ',') AS x
+), mtx_capacity_plus_corner_cases AS (
     SELECT mtx
     FROM vdf.mtx_capacity
     UNION SELECT 'BKLN06'
@@ -48,4 +79,7 @@ exclusions AS (
 )
 SELECT trim(site_code) as site_code, exclusion_reason
 FROM exclusions
+WHERE (
+    :site_codes IS NULL OR UPPER(TRIM(site_code)) IN (SELECT UPPER(TRIM(code)) FROM split_site_codes)
+) AND NOT EXISTS(SELECT * FROM user_blacklist_capacity) -- redact all non-capacity users
 ORDER BY exclusion_reason

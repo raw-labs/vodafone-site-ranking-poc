@@ -362,21 +362,47 @@ combined AS (
       sb.lines_capability,
       sb.location_capability,
       sb.location_free_area,
-      sb.location_occupied_area
+      sb.location_occupied_area,
+      sb.gen_site_code,
+      UPPER(TRIM(regexp_replace(s.site_code,' (.*)',''))) as site_code_after,
+      sb.site_code as sbsitecode
     FROM filtered_sites s
     INNER JOIN space_base sb 
-      ON (
-           UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.gen_site_code))
-         )
-         OR UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))
-            =UPPER(TRIM(sb.gen_site_code))
-         OR (
-           UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.site_code))
-         )
-         OR (
-           UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))
-            =UPPER(TRIM(sb.site_code))
-         )
+     ON (
+            gen_site_code IS NOT NULL 
+            AND 
+            (
+              UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.gen_site_code)) 
+              OR 
+              (
+                UPPER(TRIM(s.site_code))!=UPPER(TRIM(sb.gen_site_code)) 
+                AND 
+                UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))=UPPER(TRIM(sb.gen_site_code))
+              )
+            )
+        )
+        OR 
+        (
+          (
+            gen_site_code IS NULL 
+            OR (
+              UPPER(TRIM(s.site_code))!=UPPER(TRIM(sb.gen_site_code)) 
+              AND 
+              UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))!=UPPER(TRIM(sb.gen_site_code))
+            ) 
+          )
+          AND 
+          (
+            UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.site_code)) 
+            OR 
+            (
+              UPPER(TRIM(s.site_code))!=UPPER(TRIM(sb.site_code)) 
+              AND 
+              UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))=UPPER(TRIM(sb.site_code))
+              AND UPPER(TRIM(sb.site_code))!='BKLN05' AND UPPER(TRIM(s.site_code))!='BKLN05 EXT ROOM'
+            )
+          )
+        )
     WHERE 
         /* Existing free sections filter */
         (

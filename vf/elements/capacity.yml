@@ -1,0 +1,18 @@
+raw: "0.10"
+endpoint: GET
+metadata:
+  title: Retrieve Vodafone Site Elements with Combined Fixed/Mobile Power Capacity Filters.
+  description: This SQL endpoint consolidates both fixed and mobile site records, at the element/system level (element for mobile sites system for fixed sites), augmenting each with aggregated power capacities. Fixed sites are matched by linking the general_equipment_area_code to a site’s code, while mobile sites are matched via the site_name—trimming the “ TXO” component. The query supports a wide range of filters: type of site, domain (mobile or fixed), region, leasehold status, etc. Additionally, min/max parameters allow filtering on key capacity metrics (e.g., running_load_in_kw, reserved_load_in_kw, remaining_power_80_of_n_in_kw). Union logic ensures a unified result set with appropriate capacity fields, and pagination controls limit or offset the returned rows. This design thus provides a single endpoint that can answer capacity-related questions for both fixed and mobile sites under numerous filtering criteria.
+  tags:
+    - vodafone
+    - elements
+    - capacity
+code: sql
+codeFile: capacity.sql
+format: json
+security:
+  public: false
+  scopes:
+    - vodafone:admin
+computeClass: normal
+enabled: false

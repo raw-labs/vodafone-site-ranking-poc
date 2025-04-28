@@ -211,13 +211,17 @@
 -- @type max_cost integer
 -- @default max_cost NULL
 
--- @param topN sort results by top-N sites the highest operational costs. If not provided, then results are sorted by site code.
+-- @param topN sort results by top-N sites the highest operational costs. Note that this filter is applied LAST, AFTER ALL other filters are applied. If not provided, then results are sorted by site code.
 -- @type topN integer
 -- @default topN NULL
 
--- @param is_lease_at_risk true if lease is at risk (or lease is not secure), false otherwise (lease is secure)
+-- @param is_lease_at_risk true if lease is at risk (or lease is not secure), false otherwise (lease is secure, or lease is not at risk)
 -- @type is_lease_at_risk boolean
 -- @default is_lease_at_risk NULL
+
+-- @param is_lease_secure true if lease is secure (or lease is not at risk), false otherwise (lease is not secure, or lease is at risk)
+-- @type is_lease_secure boolean
+-- @default is_lease_secure NULL
 
 -- @param less_than_given_days_until_lease_end retrieve all sites with lease end less than the given number of days 
 -- @type less_than_given_days_until_lease_end integer
@@ -227,9 +231,33 @@
 -- @type greater_than_given_days_until_lease_end integer
 -- @default greater_than_given_days_until_lease_end NULL
 
+-- @param userid user identifier injected for authorization and data redaction purposes.
+-- @type userid varchar
+-- @default userid NULL
+
 -- @return Vodafone Sites with Combined Fixed/Mobile Power Capacity Filters, Space Filters And Opex Filters.
 
-WITH mobile_aggr_capacity AS (
+WITH user_blacklist_opex AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-opex' AND id = :userid
+), user_blacklist_capacity AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-capacity' AND id = :userid
+), user_blacklist_space AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-space' AND id = :userid
+), user_blacklist_lease AS (
+  SELECT id
+  FROM environment.secrets,
+       unnest(string_to_array(secret, ',')) id
+  WHERE name = 'user-blacklist-lease' AND id = :userid
+), mobile_aggr_capacity AS (
 	SELECT mtx, 
 		(sum(CAST(remaining_element_capability_a AS FLOAT))*54.5/1000) as aggr_remaining_power_capacity_kw,
 		(sum(CAST(element_load_a_19_01_25 AS FLOAT))*54.5/1000) as aggr_running_load_kw,
@@ -495,11 +523,25 @@ split_site_codes AS (
   FROM regexp_split_to_table(COALESCE(:site_codes, ''), ',') AS x
 ),
 filtered_sites AS (
-	SELECT vfsites.site_code, vfsites.site_name, vfsites.site_type as original_site_type, replace(
-                            upper(site_category), 'PABR', 'PABR,PCORE'
-                        ) 
-                        ||','||
-                        upper(site_type) AS site_type, vfsites.site_category, vfsites.region, vfsites.status, 
+	SELECT vfsites.site_code, vfsites.site_name, vfsites.site_type as original_site_type, 
+                        (
+                          CASE WHEN (site_type IS NULL OR (upper(trim(site_type)) NOT IN ('LTC','MTX')) AND (site_category IS NULL OR not(
+                            ARRAY['PABR','PX'] && regexp_split_to_array(
+                                  trim(
+                                      replace(
+                                          replace(
+                                              upper(site_category), 'PABR', 'PABR,PCORE'
+                                          ) 
+                                          ||','||
+                                          upper(site_type),'-',''
+                                      )
+                                  ),
+                                  ',')
+                          ))) THEN 'REGULAR'
+                          ELSE replace(upper(site_category), 'PABR', 'PABR,PCORE') ||','|| upper(site_type)
+                          END
+                        ) AS site_type, 
+                        vfsites.site_category, vfsites.region, vfsites.status, 
                         vfsites.address, vfsites.postcode, vfsites.gis_migrated, vfsites.floorplans,
                         vfsites.location, vfsites.comments, vfsites.restricted, vfsites.freehold_leasehold, 
                         vfsites.power_resilience
@@ -507,7 +549,21 @@ filtered_sites AS (
 	WHERE
 		(
             :site_types IS NULL 
-        OR 
+        OR (upper(trim(:site_types))='REGULAR' AND upper(trim(site_type)) NOT IN ('LTC','MTX') AND (site_category IS NULL OR not(
+          ARRAY['PABR','PX'] && regexp_split_to_array(
+                trim(
+                    replace(
+                        replace(
+                            upper(site_category), 'PABR', 'PABR,PCORE'
+                        ) 
+                        ||','||
+                        upper(site_type),'-',''
+                    )
+                ),
+                ',')
+        )))
+        OR (
+          (upper(trim(:site_types))!='REGULAR') AND 
             regexp_split_to_array(
                 COALESCE(
                     trim(
@@ -530,10 +586,9 @@ filtered_sites AS (
                     )
                 ),
                 ',')
-        )
+        ))
         AND (
-        :site_codes IS NULL 
-        OR UPPER(TRIM(site_code)) IN (SELECT UPPER(TRIM(code)) FROM split_site_codes)
+          :site_codes IS NULL OR UPPER(TRIM(site_code)) IN (SELECT UPPER(TRIM(code)) FROM split_site_codes)
         )
 		AND (:site_name IS NULL OR upper(vfsites.site_name) ILIKE CONCAT('%', :site_name, '%'))
         AND (:site_regions IS NULL OR EXISTS (
@@ -569,7 +624,8 @@ combined_with_capacity_tmp AS (
         round(CAST(fc.remaining_power_80_of_n_in_kw AS DECIMAL), 1) as remaining_power_80_of_n_in_kw
     FROM filtered_sites s 
         LEFT OUTER JOIN vf_fixed_capacity fc 
-            ON upper(trim(fc.general_equipment_area_code)) = trim(replace(replace(upper(s.site_code), '(GROUND FLOOR)', ''), 'ROOM', ''))
+            ON NOT EXISTS(SELECT * FROM user_blacklist_capacity) -- redact all non-capacity users
+            AND upper(trim(fc.general_equipment_area_code)) = trim(replace(replace(upper(s.site_code), '(GROUND FLOOR)', ''), 'ROOM', ''))
     WHERE original_site_type NOT IN ('MTX','LTC')
     
     -- GROUP BY rollup(fc.general_equipment_area_code, fc.general_system_name)
@@ -584,8 +640,10 @@ combined_with_capacity_tmp AS (
         round(CAST(vf_mobile_capacity.remaining_power_80_of_n_in_kw AS DECIMAL), 1)
     FROM filtered_sites 
         LEFT OUTER JOIN vf_mobile_capacity
-        ON filtered_sites.site_code=vf_mobile_capacity.mtx 
-            OR (filtered_sites.site_code NOT IN ('XGL001 (BMGMTX)', 'BKLN06') AND filtered_sites.site_name=trim(split_part(vf_mobile_capacity.mtx, ' TXO', 1)))
+        ON NOT EXISTS(SELECT * FROM user_blacklist_capacity) -- redact all non-capacity users
+          AND (filtered_sites.site_code=vf_mobile_capacity.mtx 
+              OR (filtered_sites.site_code NOT IN ('XGL001 (BMGMTX)', 'BKLN06') AND filtered_sites.site_name=trim(split_part(vf_mobile_capacity.mtx, ' TXO', 1)))
+          ) 
     WHERE (filtered_sites.original_site_type='LTC' OR filtered_sites.original_site_type='MTX')
 ),
 combined_with_capacity AS (
@@ -621,18 +679,42 @@ combined_with_space AS (
       sb.location_occupied_area
     FROM combined_with_capacity s
     LEFT OUTER JOIN space_base sb 
-      ON (
-           UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.gen_site_code))
-         )
-         OR UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))
-            =UPPER(TRIM(sb.gen_site_code))
-         OR (
-           UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.site_code))
-         )
-         OR (
-           UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))
-            =UPPER(TRIM(sb.site_code))
-         )
+      ON ((
+            gen_site_code IS NOT NULL 
+            AND 
+            (
+              UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.gen_site_code)) 
+              OR 
+              (
+                UPPER(TRIM(s.site_code))!=UPPER(TRIM(sb.gen_site_code)) 
+                AND 
+                UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))=UPPER(TRIM(sb.gen_site_code))
+              )
+            )
+        )
+        OR 
+        (
+          (
+            gen_site_code IS NULL 
+            OR (
+              UPPER(TRIM(s.site_code))!=UPPER(TRIM(sb.gen_site_code)) 
+              AND 
+              UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))!=UPPER(TRIM(sb.gen_site_code))
+            ) 
+          )
+          AND 
+          (
+            UPPER(TRIM(s.site_code))=UPPER(TRIM(sb.site_code)) 
+            OR 
+            (
+              UPPER(TRIM(s.site_code))!=UPPER(TRIM(sb.site_code)) 
+              AND 
+              UPPER(TRIM(regexp_replace(s.site_code,' (.*)','')))=UPPER(TRIM(sb.site_code))
+              AND UPPER(TRIM(sb.site_code))!='BKLN05' AND UPPER(TRIM(s.site_code))!='BKLN05 EXT ROOM'
+            )
+          )
+        ))
+      AND NOT EXISTS(SELECT * FROM user_blacklist_space) -- redact all non-space users
     WHERE 
         /* Existing free sections filter */
         (
@@ -805,11 +887,13 @@ combined_with_ownership_unfiltered AS (
     LEFT OUTER JOIN combined_with_ownership_codes_unique_records c
       ON s.site_code=c.site_code
         AND c.tenancy_reference=(SELECT MIN(tenancy_reference) FROM combined_with_ownership_codes_unique_records ow WHERE ow.site_code=c.site_code)
+        AND NOT EXISTS(SELECT * FROM user_blacklist_lease) -- redact all non-lease users
         -- AND NOW()<CAST(lease_end AS TIMESTAMP) AND NOW()>CAST(lease_start AS TIMESTAMP) 
 ), combined_with_ownership AS (
   SELECT * 
   FROM combined_with_ownership_unfiltered
   WHERE (:is_lease_at_risk IS NULL OR :is_lease_at_risk=at_risk)
+    AND (:is_lease_at_risk IS NOT NULL OR :is_lease_secure IS NULL OR :is_lease_secure!=at_risk)
     AND (:less_than_given_days_until_lease_end IS NULL OR 
       DATE(lease_end) < (NOW()::date + :less_than_given_days_until_lease_end ))
     AND (:greater_than_given_days_until_lease_end IS NULL OR 
@@ -823,41 +907,38 @@ filtered_vfopex AS (
         and date_part('month', CAST(vfopex.reading_date AS DATE))<=:max_month
     GROUP BY sitecode
 ),
-combined_with_opex_tmp AS (
-    SELECT combined_with_ownership.*,
-        total_cost_in_k_gbp
-    FROM combined_with_ownership
-        left outer join vdf.vfbridge on upper(trim(vfbridge.site_code))=combined_with_ownership.site_code
-            OR (vfbridge.postcode=combined_with_ownership.postcode AND vfbridge.postcode IN (
+combined_with_opex AS (
+    SELECT distinct co.*, 
+      total_cost_in_k_gbp,
+      CASE WHEN :topN IS NOT NULL THEN total_cost_in_k_gbp END as suppl_a,
+      CASE WHEN :topN IS NULL THEN co.site_code END as suppl_b
+    FROM combined_with_ownership co
+        left outer join vdf.vfbridge on upper(trim(vfbridge.site_code))=co.site_code
+            OR (vfbridge.postcode=co.postcode AND vfbridge.postcode IN (
                 select postcode from unique_postal_codes)
             )
             OR (vfbridge.site_code IS NOT NULL AND (
-                trim(combined_with_ownership.site_code) LIKE concat('%(',upper(trim(vfbridge.site_code)),')%'))
-                OR (upper(trim(vfbridge.site_code)) ~ concat(combined_with_ownership.site_code,'\\s*[,&].*'))
-                OR (upper(trim(vfbridge.site_code)) ~ concat('.*[,&]\\s*',combined_with_ownership.site_code))
+                trim(co.site_code) LIKE concat('%(',upper(trim(vfbridge.site_code)),')%'))
+                OR (upper(trim(vfbridge.site_code)) ~ concat(co.site_code,'\\s*[,&].*'))
+                OR (upper(trim(vfbridge.site_code)) ~ concat('.*[,&]\\s*',co.site_code))
             )
         left outer join filtered_vfopex on upper(trim(vfbridge.bridge_site_code))=upper(trim(filtered_vfopex.sitecode))
+            AND NOT EXISTS(SELECT * FROM user_blacklist_opex) -- redact all non-opex users
     WHERE (:min_cost IS NULL OR total_cost_in_k_gbp>:min_cost) 
         AND 
         (:max_cost IS NULL OR total_cost_in_k_gbp<:max_cost)
         AND
         (CASE WHEN :topN IS NOT NULL THEN total_cost_in_k_gbp IS NOT NULL ELSE true END)
+        AND 
+        not(co.site_code='BDEN04' AND free_sections=0) -- outlier due to BDE 2025-02-20 (space file)
     ORDER BY
         -- If topN is provided, sort by total_cost DESC; otherwise sort by site_code ASC
-        CASE WHEN :topN IS NOT NULL THEN total_cost_in_k_gbp END DESC,
-        CASE WHEN :topN IS NULL THEN combined_with_ownership.site_code END ASC
+        suppl_a DESC,
+        suppl_b ASC
     LIMIT CASE WHEN :topN IS NOT NULL THEN :topN ELSE 1000 END
-),
-combined_with_opex AS (
-  SELECT distinct *
-  FROM combined_with_opex_tmp
 )
 SELECT *
-FROM combined_with_opex
-WHERE not(site_code='BDEN04' AND free_sections=0) -- outlier due to BDE 2025-02-20 (space file)
-ORDER BY
-        -- If topN is provided, sort by total_cost DESC; otherwise sort by site_code ASC
-        CASE WHEN :topN IS NOT NULL THEN total_cost_in_k_gbp END DESC,
-        CASE WHEN :topN IS NULL THEN site_code END ASC
+FROM combined_with_opex 
+-- WHERE (:topN IS NULL OR :site_codes IS NULL OR UPPER(TRIM(combined_with_opex.site_code)) IN (SELECT UPPER(TRIM(code)) FROM split_site_codes))
 LIMIT COALESCE(:page_size, 500)
 OFFSET (COALESCE(:page, 1) - 1) * COALESCE(:page_size, 500);
